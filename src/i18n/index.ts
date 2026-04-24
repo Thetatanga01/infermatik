@@ -15,7 +15,8 @@ function getStoredLang(): "tr" | "en" | "de" {
 
 const lng = getStoredLang();
 
-void i18n.use(initReactI18next).init({
+/** Resolve only after i18n has loaded resources; app should render after this. */
+export const i18nReady = i18n.use(initReactI18next).init({
   resources: {
     tr: { translation: tr },
     en: { translation: en },
