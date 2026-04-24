@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Infermatik — Minimal corporate design system. All colors HSL. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 25% 12%;
+
+    /* Infermatik blue */
+    --primary: 224 76% 48%;
+    --primary-foreground: 0 0% 100%;
+    --primary-muted: 224 76% 96%;
+
+    --secondary: 220 16% 96%;
+    --secondary-foreground: 222 25% 12%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 224 76% 96%;
+    --accent-foreground: 224 76% 48%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 76% 48%;
+
+    --radius: 0.75rem;
+
+    /* Surfaces */
+    --surface: 220 20% 98%;
+    --surface-foreground: 222 25% 12%;
+
+    /* Dark accent block (for value highlights) */
+    --ink: 222 47% 11%;
+    --ink-foreground: 0 0% 100%;
+
+    /* Subtle eyebrow/label */
+    --eyebrow: 224 76% 48%;
+
+    /* Sidebar — unused but kept */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 25% 12%;
+    --sidebar-primary: 224 76% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 222 25% 12%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 224 76% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "cv11";
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply mx-auto w-full max-w-[1180px] px-8 md:px-14;
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-primary;
+  }
+
+  .page-header {
+    @apply flex items-center justify-between border-b border-border pb-5;
+  }
+
+  .page-footer {
+    @apply flex items-center justify-between border-t border-border pt-5 text-xs text-muted-foreground;
+  }
+}
