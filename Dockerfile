@@ -5,7 +5,10 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
 
+# Source after lockfile so `npm ci` layer caches when only app code changes
 COPY . .
+# Set only for the build so devDependencies from `npm ci` stay (Vite, TypeScript, etc.)
+ENV NODE_ENV=production
 RUN npm run build
 
 # production
