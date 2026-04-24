@@ -106,6 +106,17 @@
     "sectors": "Sektörler",
     "contact": "İletişim"
   },
+  "loginPage": {
+    "metaTitle": "Giriş — Infermatik",
+    "metaDescription": "Infermatik kurumsal giriş sayfası.",
+    "title": "Giriş",
+    "subtitle": "Kurumsal hesabınızla giriş yapın.",
+    "username": "Kullanıcı adı",
+    "password": "Şifre",
+    "submit": "Giriş yap",
+    "backHome": "Ana sayfaya dön",
+    "errorInvalid": "Kullanıcı adı veya şifre hatalı. Lütfen bilgilerinizi kontrol edin."
+  },
   "notFound": {
     "title": "404",
     "message": "Sayfa bulunamadı.",

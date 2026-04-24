@@ -106,6 +106,17 @@
     "sectors": "Sectors",
     "contact": "Contact"
   },
+  "loginPage": {
+    "metaTitle": "Sign in — Infermatik",
+    "metaDescription": "Sign in to Infermatik for your organization.",
+    "title": "Sign in",
+    "subtitle": "Use your organization account to continue.",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Sign in",
+    "backHome": "Back to home",
+    "errorInvalid": "Invalid username or password. Please check your details."
+  },
   "notFound": {
     "title": "404",
     "message": "Page not found.",
