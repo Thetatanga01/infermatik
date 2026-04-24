@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import { InfermatikLogo } from "@/components/InfermatikLogo";
 import { LanguageSwitcher } from "@/components/site/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetClose, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 const linkDefs = [
   { hash: "problem", k: "nav.problem" },
@@ -14,9 +15,14 @@ const linkDefs = [
   { hash: "deger", k: "nav.value" },
 ] as const;
 
+const navLinkClass =
+  "rounded-md px-3 py-3 text-left text-base font-medium text-foreground transition-colors hover:bg-muted";
+
 export const Header = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -35,7 +41,7 @@ export const Header = () => {
     >
       <div className="container-narrow flex h-16 items-center gap-2 md:gap-3">
         <div className="md:hidden">
-          <Sheet>
+          <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
             <SheetTrigger asChild>
               <Button
                 type="button"
@@ -53,14 +59,17 @@ export const Header = () => {
               </SheetHeader>
               <nav className="flex flex-col p-2" aria-label={t("nav.mainMenu")}>
                 {linkDefs.map((l) => (
-                  <SheetClose asChild key={l.hash}>
-                    <Link
-                      to={{ pathname: "/", hash: l.hash }}
-                      className="rounded-md px-3 py-3 text-base font-medium text-foreground transition-colors hover:bg-muted"
-                    >
-                      {t(l.k)}
-                    </Link>
-                  </SheetClose>
+                  <button
+                    key={l.hash}
+                    type="button"
+                    className={cn(navLinkClass, "w-full")}
+                    onClick={() => {
+                      setMenuOpen(false);
+                      navigate({ pathname: "/", hash: l.hash });
+                    }}
+                  >
+                    {t(l.k)}
+                  </button>
                 ))}
               </nav>
             </SheetContent>

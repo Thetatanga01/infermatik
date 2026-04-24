@@ -6,20 +6,25 @@ import { Sectors } from "@/components/site/Sectors";
 import { Value } from "@/components/site/Value";
 import { CTA } from "@/components/site/CTA";
 import { Footer } from "@/components/site/Footer";
+import { useHashScroll } from "@/hooks/useHashScroll";
 
-const Index = () => (
-  <div className="min-h-screen bg-background">
-    <Header />
-    <main>
-      <Hero />
-      <Problem />
-      <Capabilities />
-      <Sectors />
-      <Value />
-      <CTA />
-    </main>
-    <Footer />
-  </div>
-);
+const Index = () => {
+  useHashScroll();
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <Hero />
+        <Problem />
+        <Capabilities />
+        <Sectors />
+        <Value />
+        <CTA />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 export default Index;

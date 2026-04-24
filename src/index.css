@@ -5,6 +5,11 @@
 /* Infermatik — Minimal corporate design system. All colors HSL. */
 
 @layer base {
+  /* Anchor scroll offset under sticky header (h-16) */
+  section[id] {
+    scroll-margin-top: 4.5rem;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 222 25% 12%;
