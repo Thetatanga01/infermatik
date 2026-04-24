@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Infermatik — Enterprise Content Intelligence Platform",
+    "description": "Infermatik uses AI to read document, audio, and video content and turn it into structured data. Enterprise content intelligence."
+  },
+  "nav": {
+    "problem": "Problem",
+    "capabilities": "Capabilities",
+    "sectors": "Sectors",
+    "value": "Value",
+    "login": "Sign in",
+    "requestDemo": "Request a demo"
+  },
+  "lang": {
+    "tr": "Türkçe",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "hero": {
+    "badge": "Enterprise Content Intelligence Platform",
+    "headline1": "Content becomes clear,",
+    "headline2": "decisions get faster.",
+    "sub": "Your documents, audio, and video are read and interpreted with AI, flowing into your decision-making as data.",
+    "ctaDemo": "Book a demo",
+    "ctaFeatures": "See capabilities",
+    "tags": ["Document understanding", "Audio & video extraction", "Decision automation"]
+  },
+  "problem": {
+    "eyebrow": "Problem & solution",
+    "title": "Enterprise content has become an enterprise burden.",
+    "intro": "Contracts, invoices, customer calls, field video — the volume of content keeps growing, yet valuable data is still extracted with human effort. That is slow, costly, and does not scale.",
+    "approachEyebrow": "The Infermatik approach",
+    "approachLine1": "Ingest. Understand.",
+    "approachLine2": "Act on it.",
+    "problems": [
+      { "title": "Manual data entry", "body": "Thousands of documents, recordings, and videos are read by hand and typed into systems." },
+      { "title": "Inconsistent accuracy", "body": "Fatigue, attention, and person-to-person differences drive high error rates; the process is unpredictable." },
+      { "title": "Processes that do not scale", "body": "Volume grows but headcount does not. Every new document type means more work." },
+      { "title": "Dark content", "body": "Recordings and video sit in archives; the information inside is never used." },
+      { "title": "Weak auditability", "body": "Which decision was based on which content? There is no end-to-end traceability." },
+      { "title": "Complex structures", "body": "Handwriting, stamps, tables, multi-speaker audio — existing tools fall short." }
+    ],
+    "steps": [
+      { "n": "01 · INGEST", "title": "Bring in content", "body": "Document, audio, or video — single or bulk. Drag-and-drop, API, email, or system integration." },
+      { "n": "02 · UNDERSTAND", "title": "Let AI interpret", "body": "Text is extracted, transcribed, summarized. Structure, intent, and key fields are recognized automatically." },
+      { "n": "03 · ACT", "title": "Feed your processes", "body": "Your teams review and approve; data flows cleanly into ERP, CRM, or workflow tools." }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "Capabilities",
+    "title": "One platform, full content intelligence.",
+    "intro": "Infermatik works across content types with the same template, review, and reporting logic. Set it up once, use it in every department.",
+    "items": [
+      { "n": "01", "title": "Template management", "body": "Define a template once per content type; Infermatik applies the same extraction consistently, every time." },
+      { "n": "02", "title": "Automatic extraction", "body": "Structured data from text, tables, handwriting, audio, and video in seconds." },
+      { "n": "03", "title": "Batch processing", "body": "Hundreds of items processed in parallel; retry failures with one click." },
+      { "n": "04", "title": "Human-in-the-loop", "body": "AI assists; it does not replace judgment. Every result is reviewed with a full audit trail." },
+      { "n": "05", "title": "System integration", "body": "Clean data into SAP, CRM, and workflow systems; real-time webhooks and APIs." },
+      { "n": "06", "title": "Reporting", "body": "Template performance, accuracy, STP, and team productivity in one dashboard." }
+    ]
+  },
+  "sectors": {
+    "eyebrow": "Sectors",
+    "title": "Different content in every sector — one platform.",
+    "items": [
+      { "sector": "Financial services", "title": "Credit & contracts", "body": "Customer data from applications, compliance checks from call recordings." },
+      { "sector": "Telecom", "title": "Dealer & call center", "body": "Intent and actions from dealer paperwork, stock forms, and call logs." },
+      { "sector": "Insurance", "title": "Claims files", "body": "Damage triage from photos, video, and expert reports; faster, more consistent." }
+    ]
+  },
+  "value": {
+    "eyebrow": "The value you get",
+    "title": "Before and after. The difference is measurable.",
+    "intro": "Infermatik is not just speed; it is a traceable, auditable, and safely scalable way of working.",
+    "beforeLabel": "Before",
+    "afterLabel": "With Infermatik",
+    "before": [
+      "Hours of manual data entry",
+      "Accuracy that depends on the person",
+      "Audio and video left as dead weight in the archive",
+      "Every new document type means new workload",
+      "Scattered or missing audit trails"
+    ],
+    "after": [
+      "Structured data in seconds",
+      "AI-assisted, auditable accuracy",
+      "Meaningful signals from every content type",
+      "Define templates and scale without limits",
+      "End-to-end traceability by design"
+    ],
+    "pillars": [
+      { "title": "Enterprise security", "body": "Role-based access, team isolation, centralized identity." },
+      { "title": "Flexible deployment", "body": "Cloud or on‑prem; your data stays under your control." },
+      { "title": "Full audit trail", "body": "Every action and change — with versioning and rollback where needed." }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Next step",
+    "title": "Let us plan a demo tailored to your organization.",
+    "body": "See how Infermatik works on your own documents, audio, and video samples. In a 30-minute session we walk through your use case.",
+    "button": "Request a demo"
+  },
+  "footer": {
+    "tagline": "Enterprise Content Intelligence Platform · © {{year}} Infermatik",
+    "capabilities": "Capabilities",
+    "sectors": "Sectors",
+    "contact": "Contact"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Page not found.",
+    "back": "Back to home"
+  },
+  "a11y": {
+    "logo": "Infermatik",
+    "languageMenu": "Choose language"
+  }
+}

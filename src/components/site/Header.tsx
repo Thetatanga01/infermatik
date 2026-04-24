@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { InfermatikLogo } from "@/components/InfermatikLogo";
+import { LanguageSwitcher } from "@/components/site/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 
-const links = [
-  { href: "#problem", label: "Problem" },
-  { href: "#yetenekler", label: "Yetenekler" },
-  { href: "#sektorler", label: "Sektörler" },
-  { href: "#deger", label: "Değer" },
-];
+const linkDefs = [
+  { href: "#problem", k: "nav.problem" },
+  { href: "#yetenekler", k: "nav.capabilities" },
+  { href: "#sektorler", k: "nav.sectors" },
+  { href: "#deger", k: "nav.value" },
+] as const;
 
 export const Header = () => {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -27,29 +30,30 @@ export const Header = () => {
           : "border-b border-transparent bg-background"
       }`}
     >
-      <div className="container-narrow flex h-16 items-center justify-between">
-        <a href="#top" aria-label="Infermatik">
+      <div className="container-narrow flex h-16 items-center gap-3">
+        <a href="#top" aria-label={t("a11y.logo")}>
           <InfermatikLogo />
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex">
-          {links.map((l) => (
+        <nav className="hidden min-w-0 flex-1 justify-center gap-6 md:flex lg:gap-8">
+          {linkDefs.map((l) => (
             <a
               key={l.href}
               href={l.href}
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              {l.label}
+              {t(l.k)}
             </a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="ml-auto flex shrink-0 items-center gap-1.5 sm:gap-2">
+          <LanguageSwitcher />
           <Button asChild variant="ghost" className="hidden sm:inline-flex">
-            <a href="#iletisim">Giriş</a>
+            <a href="#iletisim">{t("nav.login")}</a>
           </Button>
           <Button asChild>
-            <a href="#iletisim">Demo Talep Et</a>
+            <a href="#iletisim">{t("nav.requestDemo")}</a>
           </Button>
         </div>
       </div>

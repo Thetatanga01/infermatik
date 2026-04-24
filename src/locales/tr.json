@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Infermatik — Kurumsal İçerik Anlama Platformu",
+    "description": "Infermatik, belge, ses ve video içeriklerini AI ile okuyup yapılandırılmış veriye çevirir. Kurumsal içerik zekası platformu."
+  },
+  "nav": {
+    "problem": "Problem",
+    "capabilities": "Yetenekler",
+    "sectors": "Sektörler",
+    "value": "Değer",
+    "login": "Giriş",
+    "requestDemo": "Demo Talep Et"
+  },
+  "lang": {
+    "tr": "Türkçe",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "hero": {
+    "badge": "Kurumsal İçerik Anlama Platformu",
+    "headline1": "İçerik anlaşılır hâle gelir,",
+    "headline2": "kararlar hızlanır.",
+    "sub": "Belgeleriniz, ses kayıtlarınız ve videolarınız; yapay zekâ ile okunur, anlamlandırılır ve karar süreçlerinize doğrudan veri olarak akar.",
+    "ctaDemo": "Demo Planlayın",
+    "ctaFeatures": "Yetenekleri Gör",
+    "tags": ["Belge Anlama", "Ses & Video Çıkarımı", "Karar Otomasyonu"]
+  },
+  "problem": {
+    "eyebrow": "Problem & Çözüm",
+    "title": "Kurumsal içerik, kurumsal yük hâline geldi.",
+    "intro": "Sözleşmeler, faturalar, müşteri görüşmeleri, saha videoları — her gün üretilen içerik büyüyor. Ama içindeki değerli veri hâlâ insan gücüyle çıkarılıyor. Bu yavaş, pahalı ve ölçeklenemez.",
+    "approachEyebrow": "Infermatik Yaklaşımı",
+    "approachLine1": "Al. Anla.",
+    "approachLine2": "Karara bağla.",
+    "problems": [
+      { "title": "Manuel veri girişi", "body": "Binlerce belge, kayıt ve video manuel olarak okunuyor ve elle sisteme giriliyor." },
+      { "title": "Tutarsız doğruluk", "body": "Yorgunluk, dikkat ve kişi farkları nedeniyle hata oranı yüksek, süreç öngörülemez." },
+      { "title": "Ölçeklenemeyen süreç", "body": "Hacim artıyor, insan kaynağı sabit. Her yeni belge tipi yeni iş yükü demek." },
+      { "title": "Karanlık içerik", "body": "Ses kayıtları ve videolar arşivde duruyor; içlerindeki bilgi hiç kullanılmıyor." },
+      { "title": "Denetim eksikliği", "body": "Hangi karar, hangi içeriğe dayanarak verildi — izlenebilirlik yok." },
+      { "title": "Karmaşık yapılar", "body": "El yazısı, mühür, tablolar, çok konuşmacılı kayıtlar — mevcut araçlar yetersiz." }
+    ],
+    "steps": [
+      { "n": "01 · AL", "title": "İçeriği alın", "body": "Belge, ses veya video — tekli ya da toplu. Sürükle-bırak, API, e-posta veya sistem entegrasyonu ile." },
+      { "n": "02 · ANLA", "title": "AI anlamlandırsın", "body": "Metin çıkarılır, transkripte edilir, özetlenir. Yapı, niyet ve önemli veriler otomatik tanınır." },
+      { "n": "03 · KARAR", "title": "Sürece aktarın", "body": "Ekipleriniz inceler, onaylar; veri ERP, CRM veya iş akışına temiz şekilde akar." }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "Yetenekler",
+    "title": "Bir platform, tam kapsamlı içerik zekâsı.",
+    "intro": "Infermatik, içerik türü fark etmeksizin aynı şablon, onay ve raporlama mantığıyla çalışır. Bir kez kurun, her departmanda kullanın.",
+    "items": [
+      { "n": "01", "title": "Şablon Yönetimi", "body": "Her içerik tipi için bir kez şablon tanımlayın; Infermatik aynı çıkarımı sürekli, tutarlı şekilde uygular." },
+      { "n": "02", "title": "Otomatik Çıkarım", "body": "Metin, tablo, el yazısı, ses ve video içeriğinden saniyeler içinde yapılandırılmış veri." },
+      { "n": "03", "title": "Toplu İşleme", "body": "Yüzlerce içerik eşzamanlı yüklenir ve işlenir; başarısızları tek tıkla tekrar deneyin." },
+      { "n": "04", "title": "İnsan Onayı", "body": "AI yardımcıdır, karar verici değil. Her sonuç ekibinizin onayından geçer, tam denetim kaydıyla." },
+      { "n": "05", "title": "Sistem Entegrasyonu", "body": "SAP, CRM ve iş akışı sistemlerine temiz veri akışı; webhook ve API ile anlık bağlantı." },
+      { "n": "06", "title": "Raporlama", "body": "Şablon performansı, doğruluk oranları, STP oranı ve ekip üretkenliği tek panelde." }
+    ]
+  },
+  "sectors": {
+    "eyebrow": "Sektörler",
+    "title": "Her sektörde, farklı içerik — aynı platform.",
+    "items": [
+      { "sector": "Finans", "title": "Kredi & sözleşme", "body": "Başvuru belgelerinden müşteri verisi çıkarımı, görüşme kayıtlarından uyum (compliance) kontrolü." },
+      { "sector": "Telekom", "title": "Bayi & çağrı merkezi", "body": "Bayi evrakları, stok formları ve çağrı kayıtlarından niyet ve aksiyon çıkarımı." },
+      { "sector": "Sigorta", "title": "Hasar dosyaları", "body": "Fotoğraf, video ve eksper raporlarından hasar tespiti; süreci hızlandırır, tutarlılık getirir." }
+    ]
+  },
+  "value": {
+    "eyebrow": "Sağladığı Değer",
+    "title": "Öncesi ve sonrası. Fark ölçülebilir.",
+    "intro": "Infermatik'in değeri yalnızca hız değil; izlenebilir, denetlenebilir ve güvenle ölçeklenebilir bir süreçtir.",
+    "beforeLabel": "Öncesi",
+    "afterLabel": "Infermatik ile",
+    "before": [
+      "Saatler süren manuel veri girişi",
+      "Kişiye bağlı, tutarsız doğruluk",
+      "Ses ve video kayıtları arşivde ölü bilgi",
+      "Her yeni belge tipi yeni iş yükü",
+      "Denetim izi dağınık veya eksik"
+    ],
+    "after": [
+      "Saniyeler içinde yapılandırılmış veri",
+      "AI destekli, denetlenebilir doğruluk",
+      "Her içerik türünden anlamlı çıkarım",
+      "Şablon tanımla, sınırsız ölçekle",
+      "Uçtan uca tam denetim kaydı"
+    ],
+    "pillars": [
+      { "title": "Kurumsal güvenlik", "body": "Rol bazlı erişim, birim izolasyonu, merkezî kimlik doğrulama." },
+      { "title": "Esnek kurulum", "body": "Bulut veya kurum içi (on-prem) kurulum, veriniz sizin kontrolünüzde." },
+      { "title": "Tam denetim izi", "body": "Her işlem, her değişiklik — sürüm ve geri dönüş desteğiyle kaydedilir." }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Sıradaki Adım",
+    "title": "Kurumunuza özel bir demo planlayalım.",
+    "body": "Kendi belgeleriniz, ses ve video örnekleriniz üzerinde Infermatik'in nasıl çalıştığını birlikte görelim. 30 dakikalık bir görüşmede kullanım senaryonuzu konuşuyoruz.",
+    "button": "Demo Talep Et"
+  },
+  "footer": {
+    "tagline": "Kurumsal İçerik Anlama Platformu · © {{year}} Infermatik",
+    "capabilities": "Yetenekler",
+    "sectors": "Sektörler",
+    "contact": "İletişim"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Sayfa bulunamadı.",
+    "back": "Ana sayfaya dön"
+  },
+  "a11y": {
+    "logo": "Infermatik",
+    "languageMenu": "Dil seçin"
+  }
+}

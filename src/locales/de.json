@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "title": "Infermatik — Unternehmensplattform für Inhaltsverständnis",
+    "description": "Infermatik liest Dokumente, Audio und Video mit KI und macht daraus strukturierte Daten. Unternehmensweite Content Intelligence."
+  },
+  "nav": {
+    "problem": "Problem",
+    "capabilities": "Funktionen",
+    "sectors": "Branchen",
+    "value": "Nutzen",
+    "login": "Anmelden",
+    "requestDemo": "Demo anfragen"
+  },
+  "lang": {
+    "tr": "Türkçe",
+    "en": "English",
+    "de": "Deutsch"
+  },
+  "hero": {
+    "badge": "Unternehmensplattform für Inhaltsverständnis",
+    "headline1": "Inhalte werden verständlich,",
+    "headline2": "Entscheidungen schneller.",
+    "sub": "Ihre Dokumente, Tonaufnahmen und Videos werden mit KI gelesen und in Ihre Entscheidungsprozesse als strukturierte Daten überführt.",
+    "ctaDemo": "Demo planen",
+    "ctaFeatures": "Funktionen ansehen",
+    "tags": ["Dokumentenverständnis", "Audio- & Video-Extraktion", "Entscheidungsautomatisierung"]
+  },
+  "problem": {
+    "eyebrow": "Problem & Lösung",
+    "title": "Unternehmensinhalte sind zur Belastung geworden.",
+    "intro": "Verträge, Rechnungen, Kundengespräche, Außendienstvideos — die Datenmenge wächst, wertvolle Informationen werden aber noch mit menschlichem Aufwand extrahiert. Das ist langsam, teuer und skaliert nicht.",
+    "approachEyebrow": "Der Infermatik-Ansatz",
+    "approachLine1": "Erfassen. Verstehen.",
+    "approachLine2": "Entscheiden.",
+    "problems": [
+      { "title": "Manuelle Dateneingabe", "body": "Tausende Dokumente, Aufnahmen und Videos werden per Hand gelesen und in Systeme eingegeben." },
+      { "title": "Uneinheitliche Genauigkeit", "body": "Müdigkeit, Aufmerksamkeit und unterschiedliche Bearbeiter führen zu Fehlern; der Ablauf bleibt schwer planbar." },
+      { "title": "Nicht skalierbare Prozesse", "body": "Die Menge wächst, die Kapazität nicht. Jeder neue Dokumenttyp bedeutet Mehraufwand." },
+      { "title": "Verborgene Inhalte", "body": "Audio und Video lagern in Archiven; die Information bleibt ungenutzt." },
+      { "title": "Fehlende Nachvollziehbarkeit", "body": "Welche Entscheidung basierte auf welchem Inhalt? Durchgängige Nachvollziehbarkeit fehlt." },
+      { "title": "Komplexe Strukturen", "body": "Handschrift, Stempel, Tabellen, mehrsprecherige Aufnahmen — gängige Tools reichen nicht aus." }
+    ],
+    "steps": [
+      { "n": "01 · ERFASSEN", "title": "Inhalte einspielen", "body": "Dokument, Audio oder Video — einzeln oder in großen Mengen. Per Drag-and-drop, API, E-Mail oder Systemintegration." },
+      { "n": "02 · VERSTEHEN", "title": "KI interpretiert", "body": "Text wird extrahiert, transkribiert, zusammengefasst. Struktur, Absicht und Felder werden automatisch erkannt." },
+      { "n": "03 · ENTSCHEIDEN", "title": "In Prozesse einspeisen", "body": "Ihre Teams prüfen und freigeben; Daten fließen sauber in ERP, CRM oder Workflows." }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "Funktionen",
+    "title": "Eine Plattform, vollständige Content Intelligence.",
+    "intro": "Infermatik arbeitet über alle Inhaltstypen hinweg mit derselben Logik für Vorlagen, Prüfung und Reporting. Einmal einrichten, in jeder Abteilung nutzen.",
+    "items": [
+      { "n": "01", "title": "Vorlagenverwaltung", "body": "Pro Inhaltstyp einmal eine Vorlage definieren; Infermatik wendet die Extraktion immer gleich an." },
+      { "n": "02", "title": "Automatische Extraktion", "body": "Strukturierte Daten aus Text, Tabelle, Handschrift, Audio und Video in Sekunden." },
+      { "n": "03", "title": "Stapelverarbeitung", "body": "Hunderte Inhalte parallel; fehlgeschlagene Fälle mit einem Klick erneut anstoßen." },
+      { "n": "04", "title": "Mensch im Kreislauf", "body": "Die KI unterstützt, ersetzt aber keine Beurteilung. Jedes Ergebnis mit vollständigem Prüfprotokoll." },
+      { "n": "05", "title": "Systemintegration", "body": "Saubere Daten in SAP, CRM und Abläufe; Echtzeit über Webhooks und API." },
+      { "n": "06", "title": "Reporting", "body": "Vorlagenperformance, Genauigkeit, STP-Quote und Teameffizienz in einem Panel." }
+    ]
+  },
+  "sectors": {
+    "eyebrow": "Branchen",
+    "title": "Jede Branche, andere Inhalte — dieselbe Plattform.",
+    "items": [
+      { "sector": "Finanzen", "title": "Kredit & Verträge", "body": "Kundendaten aus Anträgen, Compliance aus Gesprächsaufzeichnungen." },
+      { "sector": "Telekom", "title": "Händler & Callcenter", "body": "Absichten und Aktionen aus Händlerunterlagen, Bestandsformularen und Anrufprotokollen." },
+      { "sector": "Versicherung", "title": "Schadenakten", "body": "Schadenerkennung anhand von Fotos, Video und Expertiseberichten; schnellere, konsistentere Bearbeitung." }
+    ]
+  },
+  "value": {
+    "eyebrow": "Ihr Nutzen",
+    "title": "Vorher und nachher. Der Unterschied ist messbar.",
+    "intro": "Infermatik bietet nicht nur Tempo, sondern einen nachvollziehbaren, prüfbaren und sicher skalierbaren Ablauf.",
+    "beforeLabel": "Vorher",
+    "afterLabel": "Mit Infermatik",
+    "before": [
+      "Stundenlange manuelle Eingabe",
+      "Von der Person abhängige Genauigkeit",
+      "Audio und Video liegen wertlos im Archiv",
+      "Jeder neue Dokumenttyp bringt Mehraufwand",
+      "Lückenhafte oder fehlende Prüfpfade"
+    ],
+    "after": [
+      "Strukturierte Daten in Sekunden",
+      "KI-gestützte, prüfbare Genauigkeit",
+      "Aussagekräftige Signale aus jedem Inhaltstyp",
+      "Vorlagen definieren, ohne Grenzen skalieren",
+      "End-to-End-Nachvollziehbarkeit by Design"
+    ],
+    "pillars": [
+      { "title": "Unternehmenssicherheit", "body": "Rollenbasierter Zugriff, Teamisolierung, zentrales Identitätsmanagement." },
+      { "title": "Flexible Bereitstellung", "body": "Cloud oder on-premise; Ihre Daten bleiben unter Ihrer Kontrolle." },
+      { "title": "Vollständige Revisionssicherheit", "body": "Jede Aktion, jede Änderung — mit Versionierung und Rollback, wo nötig." }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Nächster Schritt",
+    "title": "Lassen Sie uns eine Demo für Ihr Unternehmen planen.",
+    "body": "Sehen Sie, wie Infermatik mit Ihren eigenen Dokumenten, Audio- und Videobeispielen arbeitet. In 30 Minuten besprechen wir Ihren Anwendungsfall.",
+    "button": "Demo anfragen"
+  },
+  "footer": {
+    "tagline": "Unternehmensplattform für Inhaltsverständnis · © {{year}} Infermatik",
+    "capabilities": "Funktionen",
+    "sectors": "Branchen",
+    "contact": "Kontakt"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Seite nicht gefunden.",
+    "back": "Zur Startseite"
+  },
+  "a11y": {
+    "logo": "Infermatik",
+    "languageMenu": "Sprache wählen"
+  }
+}
