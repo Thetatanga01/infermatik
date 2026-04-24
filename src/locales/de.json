@@ -9,7 +9,8 @@
     "sectors": "Branchen",
     "value": "Nutzen",
     "login": "Anmelden",
-    "requestDemo": "Demo anfragen"
+    "requestDemo": "Demo anfragen",
+    "mainMenu": "Menü"
   },
   "lang": {
     "tr": "Türkçe",
@@ -124,6 +125,7 @@
   },
   "a11y": {
     "logo": "Infermatik",
-    "languageMenu": "Sprache wählen"
+    "languageMenu": "Sprache wählen",
+    "openMainMenu": "Hauptmenü öffnen"
   }
 }

@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { Menu } from "lucide-react";
 import { InfermatikLogo } from "@/components/InfermatikLogo";
 import { LanguageSwitcher } from "@/components/site/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetClose, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 const linkDefs = [
   { hash: "problem", k: "nav.problem" },
@@ -31,12 +33,48 @@ export const Header = () => {
           : "border-b border-transparent bg-background"
       }`}
     >
-      <div className="container-narrow flex h-16 items-center gap-3">
+      <div className="container-narrow flex h-16 items-center gap-2 md:gap-3">
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button
+                type="button"
+                variant="ghost"
+                size="icon"
+                className="h-9 w-9 shrink-0"
+                aria-label={t("a11y.openMainMenu")}
+              >
+                <Menu className="h-5 w-5" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-[min(20rem,88vw)] p-0 sm:max-w-sm">
+              <SheetHeader className="space-y-1 border-b border-border p-4 text-left">
+                <SheetTitle className="text-left">{t("nav.mainMenu")}</SheetTitle>
+              </SheetHeader>
+              <nav className="flex flex-col p-2" aria-label={t("nav.mainMenu")}>
+                {linkDefs.map((l) => (
+                  <SheetClose asChild key={l.hash}>
+                    <Link
+                      to={{ pathname: "/", hash: l.hash }}
+                      className="rounded-md px-3 py-3 text-base font-medium text-foreground transition-colors hover:bg-muted"
+                    >
+                      {t(l.k)}
+                    </Link>
+                  </SheetClose>
+                ))}
+              </nav>
+            </SheetContent>
+          </Sheet>
+        </div>
+
         <Link to="/" className="shrink-0" aria-label={t("a11y.logo")}>
           <InfermatikLogo />
         </Link>
 
-        <nav className="hidden min-w-0 flex-1 justify-center gap-6 md:flex lg:gap-8">
+        <nav
+          className="hidden min-w-0 flex-1 justify-center gap-6 md:flex lg:gap-8"
+          aria-label={t("nav.mainMenu")}
+        >
           {linkDefs.map((l) => (
             <Link
               key={l.hash}
@@ -53,7 +91,7 @@ export const Header = () => {
           <Button asChild variant="ghost" className="inline-flex">
             <Link to="/login">{t("nav.login")}</Link>
           </Button>
-          <Button asChild>
+          <Button asChild className="hidden md:inline-flex">
             <Link to={{ pathname: "/", hash: "iletisim" }}>{t("nav.requestDemo")}</Link>
           </Button>
         </div>

@@ -9,7 +9,8 @@
     "sectors": "Sektörler",
     "value": "Değer",
     "login": "Giriş",
-    "requestDemo": "Demo Talep Et"
+    "requestDemo": "Demo Talep Et",
+    "mainMenu": "Menü"
   },
   "lang": {
     "tr": "Türkçe",
@@ -124,6 +125,7 @@
   },
   "a11y": {
     "logo": "Infermatik",
-    "languageMenu": "Dil seçin"
+    "languageMenu": "Dil seçin",
+    "openMainMenu": "Ana menüyü aç"
   }
 }

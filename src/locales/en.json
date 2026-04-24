@@ -9,7 +9,8 @@
     "sectors": "Sectors",
     "value": "Value",
     "login": "Sign in",
-    "requestDemo": "Request a demo"
+    "requestDemo": "Request a demo",
+    "mainMenu": "Menu"
   },
   "lang": {
     "tr": "Türkçe",
@@ -124,6 +125,7 @@
   },
   "a11y": {
     "logo": "Infermatik",
-    "languageMenu": "Choose language"
+    "languageMenu": "Choose language",
+    "openMainMenu": "Open main menu"
   }
 }
