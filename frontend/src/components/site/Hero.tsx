@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
+import { DemoRequestDialog } from "@/components/site/DemoRequestDialog";
 import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
@@ -30,12 +31,12 @@ export const Hero = () => {
         <p className="mt-7 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">{t("hero.sub")}</p>
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
-          <Button asChild size="lg">
-            <a href="#iletisim" className="group">
+          <DemoRequestDialog>
+            <Button type="button" size="lg" className="group">
               {t("hero.ctaDemo")}
               <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </a>
-          </Button>
+            </Button>
+          </DemoRequestDialog>
           <Button asChild size="lg" variant="outline">
             <a href="#yetenekler">{t("hero.ctaFeatures")}</a>
           </Button>

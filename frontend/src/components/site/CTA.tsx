@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
+import { DemoRequestDialog } from "@/components/site/DemoRequestDialog";
 import { ArrowRight } from "lucide-react";
 
 export const CTA = () => {
@@ -27,12 +28,12 @@ export const CTA = () => {
             <p className="mt-5 max-w-2xl text-sm leading-relaxed text-ink-foreground/70 md:text-base">{t("cta.body")}</p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Button asChild size="lg" variant="secondary">
-                <a href="mailto:info@infermatik.com" className="group">
+              <DemoRequestDialog>
+                <Button type="button" size="lg" variant="secondary" className="group">
                   {t("cta.button")}
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-                </a>
-              </Button>
+                </Button>
+              </DemoRequestDialog>
               <a
                 href="mailto:info@infermatik.com"
                 className="text-sm font-medium text-ink-foreground/80 underline-offset-4 hover:text-ink-foreground hover:underline"

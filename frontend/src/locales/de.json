@@ -23,12 +23,35 @@
       "tooltip": "Straight-Through Processing ist die Quote, mit der ein Prozess ohne menschlichen Eingriff vollständig abgeschlossen wird. Eine höhere Quote bedeutet schnellere Abläufe, weniger Fehler und geringere manuelle Prüfkosten."
     }
   },
+  "demoForm": {
+    "title": "Demo-Anfrageformular",
+    "description": "Teilen Sie uns Organisation und Anwendungsfall mit, damit wir die Demo passend vorbereiten.",
+    "fullName": "Name",
+    "company": "Organisation",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "sector": "Branche",
+    "sectorPlaceholder": "Branche auswählen",
+    "sectorOptions": ["Versicherung", "Zoll", "Finanzen", "Human Resources", "Recht & Audit", "Außendienst", "Telekom & Öffentlicher Sektor", "Unternehmensgedächtnis"],
+    "message": "Anwendungsfall",
+    "messagePlaceholder": "Welche Dokument-, Audio- oder Videoprozesse möchten Sie in der Demo sehen?",
+    "submit": "Anfrage erstellen",
+    "submitting": "Wird gesendet...",
+    "successTitle": "Ihre Demo-Anfrage ist vorbereitet",
+    "successBody": "Ihre Anfrage wurde an unser Team übermittelt. Wir melden uns in Kürze.",
+    "errors": {
+      "required": "Bitte füllen Sie die Pflichtfelder aus.",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "notConfigured": "Der E-Mail-Versand ist noch nicht konfiguriert. Sobald SMTP-Daten hinterlegt sind, wird das Formular direkt an unser Team gesendet.",
+      "submitFailed": "Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es später erneut oder schreiben Sie an info@infermatik.com."
+    }
+  },
   "hero": {
     "badge": "Unternehmensplattform für Inhaltsverständnis",
     "headline1": "Inhalte werden verständlich,",
     "headline2": "Entscheidungen schneller.",
     "sub": "Ihre Dokumente, Tonaufnahmen und Videos werden mit KI gelesen und in Ihre Entscheidungsprozesse als strukturierte Daten überführt.",
-    "ctaDemo": "Demo planen",
+    "ctaDemo": "Demo anfragen",
     "ctaFeatures": "Funktionen ansehen",
     "tags": ["Dokumentenverständnis", "Audio- & Video-Extraktion", "Entscheidungsautomatisierung"]
   },

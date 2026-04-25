@@ -2,7 +2,24 @@
 #   docker compose build --no-cache && docker compose up -d
 services:
   web:
-    build: .
+    build: ./frontend
     ports:
       - "9090:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  backend:
+    build: ./backend
+    environment:
+      PORT: 3001
+      MAIL_TO: ${MAIL_TO:-info@infermatik.com}
+      SMTP_HOST: ${SMTP_HOST:-smtp.gmail.com}
+      SMTP_PORT: ${SMTP_PORT:-465}
+      SMTP_USER: ${SMTP_USER:-mustafaguven@gmail.com}
+      # Provide SMTP_PASS only as a deployment secret/environment variable.
+      # For Gmail, use an App Password, not your normal account password.
+      SMTP_PASS: ${SMTP_PASS:-}
+      SMTP_SECURE: ${SMTP_SECURE:-true}
+      MAIL_FROM: ${MAIL_FROM:-mustafaguven@gmail.com}
     restart: unless-stopped

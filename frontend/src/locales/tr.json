@@ -23,12 +23,35 @@
       "tooltip": "Straight-Through Processing, bir işlemin insan müdahalesi olmadan uçtan uca tamamlanma oranıdır. Oran yükseldikçe operasyon hızlanır, hata riski ve manuel kontrol maliyeti azalır."
     }
   },
+  "demoForm": {
+    "title": "Demo talep formu",
+    "description": "Kurumunuzu ve kullanım senaryonuzu paylaşın; demo akışını buna göre hazırlayalım.",
+    "fullName": "Ad soyad",
+    "company": "Kurum",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "sector": "Sektör",
+    "sectorPlaceholder": "Sektör seçin",
+    "sectorOptions": ["Sigorta", "Gümrük", "Finans", "İnsan Kaynakları", "Hukuk & Denetim", "Saha Operasyonları", "Telekom & Kamu", "Kurumsal Hafıza"],
+    "message": "Kullanım senaryosu",
+    "messagePlaceholder": "Hangi belge, ses veya video süreçlerini demoda görmek istiyorsunuz?",
+    "submit": "Talebi oluştur",
+    "submitting": "Gönderiliyor...",
+    "successTitle": "Demo talebiniz hazırlandı",
+    "successBody": "Talebiniz ekibimize iletildi. En kısa sürede sizinle iletişime geçeceğiz.",
+    "errors": {
+      "required": "Lütfen zorunlu alanları doldurun.",
+      "email": "Geçerli bir e-posta adresi girin.",
+      "notConfigured": "Mail gönderimi henüz yapılandırılmadı. SMTP bilgileri eklendiğinde form doğrudan ekibimize iletilecek.",
+      "submitFailed": "Talep gönderilemedi. Lütfen daha sonra tekrar deneyin veya info@infermatik.com adresine yazın."
+    }
+  },
   "hero": {
     "badge": "Kurumsal İçerik Anlama Platformu",
     "headline1": "İçerik anlaşılır hâle gelir,",
     "headline2": "kararlar hızlanır.",
     "sub": "Belgeleriniz, ses kayıtlarınız ve videolarınız; yapay zekâ ile okunur, anlamlandırılır ve karar süreçlerinize doğrudan veri olarak akar.",
-    "ctaDemo": "Demo Planlayın",
+    "ctaDemo": "Demo Talep Et",
     "ctaFeatures": "Yetenekleri Gör",
     "tags": ["Belge Anlama", "Ses & Video Çıkarımı", "Karar Otomasyonu"]
   },

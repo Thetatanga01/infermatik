@@ -100,9 +100,6 @@ export const Header = () => {
           <Button asChild variant="ghost" className="inline-flex">
             <Link to="/login">{t("nav.login")}</Link>
           </Button>
-          <Button asChild className="hidden md:inline-flex">
-            <Link to={{ pathname: "/", hash: "iletisim" }}>{t("nav.requestDemo")}</Link>
-          </Button>
         </div>
       </div>
     </header>

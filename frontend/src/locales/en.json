@@ -23,12 +23,35 @@
       "tooltip": "Straight-Through Processing is the rate at which a process is completed end to end without human intervention. A higher rate means faster operations, fewer errors, and lower manual review cost."
     }
   },
+  "demoForm": {
+    "title": "Demo request form",
+    "description": "Tell us about your organization and use case so we can tailor the demo flow.",
+    "fullName": "Full name",
+    "company": "Organization",
+    "email": "Email",
+    "phone": "Phone",
+    "sector": "Sector",
+    "sectorPlaceholder": "Select a sector",
+    "sectorOptions": ["Insurance", "Customs", "Finance", "Human Resources", "Legal & Audit", "Field Operations", "Telecom & Public Sector", "Enterprise Memory"],
+    "message": "Use case",
+    "messagePlaceholder": "Which document, audio, or video processes would you like to see in the demo?",
+    "submit": "Create request",
+    "submitting": "Sending...",
+    "successTitle": "Your demo request is ready",
+    "successBody": "Your request has been sent to our team. We will contact you shortly.",
+    "errors": {
+      "required": "Please complete the required fields.",
+      "email": "Enter a valid email address.",
+      "notConfigured": "Email delivery is not configured yet. Once SMTP details are added, the form will be sent directly to our team.",
+      "submitFailed": "The request could not be sent. Please try again later or email info@infermatik.com."
+    }
+  },
   "hero": {
     "badge": "Enterprise Content Intelligence Platform",
     "headline1": "Content becomes clear,",
     "headline2": "decisions get faster.",
     "sub": "Your documents, audio, and video are read and interpreted with AI, flowing into your decision-making as data.",
-    "ctaDemo": "Book a demo",
+    "ctaDemo": "Request a demo",
     "ctaFeatures": "See capabilities",
     "tags": ["Document understanding", "Audio & video extraction", "Decision automation"]
   },
