@@ -13,7 +13,7 @@ services:
     build: ./backend
     environment:
       PORT: 3001
-      MAIL_TO: ${MAIL_TO:-info@infermatik.com}
+      MAIL_TO: ${MAIL_TO:-mustafaguven@gmail.com}
       SMTP_HOST: ${SMTP_HOST:-smtp.gmail.com}
       SMTP_PORT: ${SMTP_PORT:-465}
       SMTP_USER: ${SMTP_USER:-mustafaguven@gmail.com}
