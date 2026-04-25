@@ -1,8 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { InfermatikLogo } from "@/components/InfermatikLogo";
+import { getAnchorId } from "@/lib/anchors";
 
 export const Footer = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const year = new Date().getFullYear();
 
   return (
@@ -15,10 +16,10 @@ export const Footer = () => {
           </p>
         </div>
         <div className="flex items-center gap-6 text-sm text-muted-foreground">
-          <a href="#yetenekler" className="hover:text-foreground">
+          <a href={`#${getAnchorId(i18n.language, "capabilities")}`} className="hover:text-foreground">
             {t("footer.capabilities")}
           </a>
-          <a href="#sektorler" className="hover:text-foreground">
+          <a href={`#${getAnchorId(i18n.language, "sectors")}`} className="hover:text-foreground">
             {t("footer.sectors")}
           </a>
           <a href="mailto:info@infermatik.com" className="hover:text-foreground">

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { type AnchorKey, getAnchorId } from "@/lib/anchors";
 import { Menu } from "lucide-react";
 import { InfermatikLogo } from "@/components/InfermatikLogo";
 import { LanguageSwitcher } from "@/components/site/LanguageSwitcher";
@@ -9,17 +10,17 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 const linkDefs = [
-  { hash: "problem", k: "nav.problem" },
-  { hash: "yetenekler", k: "nav.capabilities" },
-  { hash: "sektorler", k: "nav.sectors" },
-  { hash: "deger", k: "nav.value" },
+  { anchor: "problem", k: "nav.problem" },
+  { anchor: "capabilities", k: "nav.capabilities" },
+  { anchor: "sectors", k: "nav.sectors" },
+  { anchor: "value", k: "nav.value" },
 ] as const;
 
 const navLinkClass =
   "rounded-md px-3 py-3 text-left text-base font-medium text-foreground transition-colors hover:bg-muted";
 
 export const Header = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -58,19 +59,23 @@ export const Header = () => {
                 <SheetTitle className="text-left">{t("nav.mainMenu")}</SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col p-2" aria-label={t("nav.mainMenu")}>
-                {linkDefs.map((l) => (
-                  <button
-                    key={l.hash}
-                    type="button"
-                    className={cn(navLinkClass, "w-full")}
-                    onClick={() => {
-                      setMenuOpen(false);
-                      navigate({ pathname: "/", hash: l.hash });
-                    }}
-                  >
-                    {t(l.k)}
-                  </button>
-                ))}
+                {linkDefs.map((l) => {
+                  const hash = getAnchorId(i18n.language, l.anchor as AnchorKey);
+
+                  return (
+                    <button
+                      key={l.anchor}
+                      type="button"
+                      className={cn(navLinkClass, "w-full")}
+                      onClick={() => {
+                        setMenuOpen(false);
+                        navigate({ pathname: "/", hash });
+                      }}
+                    >
+                      {t(l.k)}
+                    </button>
+                  );
+                })}
               </nav>
             </SheetContent>
           </Sheet>
@@ -84,15 +89,19 @@ export const Header = () => {
           className="hidden min-w-0 flex-1 justify-center gap-6 md:flex lg:gap-8"
           aria-label={t("nav.mainMenu")}
         >
-          {linkDefs.map((l) => (
-            <Link
-              key={l.hash}
-              to={{ pathname: "/", hash: l.hash }}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {t(l.k)}
-            </Link>
-          ))}
+          {linkDefs.map((l) => {
+            const hash = getAnchorId(i18n.language, l.anchor as AnchorKey);
+
+            return (
+              <Link
+                key={l.anchor}
+                to={{ pathname: "/", hash }}
+                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {t(l.k)}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="ml-auto flex shrink-0 items-center gap-1.5 sm:gap-2">

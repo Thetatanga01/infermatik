@@ -1,15 +1,16 @@
 import { useTranslation } from "react-i18next";
+import { getAnchorId } from "@/lib/anchors";
 
 type Pillar = { title: string; body: string };
 
 export const Value = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const before = t("value.before", { returnObjects: true }) as string[];
   const after = t("value.after", { returnObjects: true }) as string[];
   const pillars = t("value.pillars", { returnObjects: true }) as Pillar[];
 
   return (
-    <section id="deger" className="border-b border-border bg-surface">
+    <section id={getAnchorId(i18n.language, "value")} className="border-b border-border bg-surface">
       <div className="container-narrow py-20 md:py-28">
         <p className="eyebrow">{t("value.eyebrow")}</p>
         <h2 className="mt-4 max-w-3xl text-[32px] font-bold leading-[1.1] tracking-tight text-foreground md:text-[44px]">

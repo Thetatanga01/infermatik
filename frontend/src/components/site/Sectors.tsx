@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { StpTooltipText } from "@/components/site/StpTooltipText";
 import { cn } from "@/lib/utils";
+import { getAnchorId } from "@/lib/anchors";
 
 type SectorItem = {
   id: string;
@@ -15,13 +16,13 @@ type SectorItem = {
 };
 
 export const Sectors = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const items = t("sectors.items", { returnObjects: true }) as SectorItem[];
   const [selectedId, setSelectedId] = useState(items[0]?.id);
   const selected = items.find((s) => s.id === selectedId) ?? items[0];
 
   return (
-    <section id="sektorler" className="border-b border-border bg-background">
+    <section id={getAnchorId(i18n.language, "sectors")} className="border-b border-border bg-background">
       <div className="container-narrow py-20 md:py-28">
         <p className="eyebrow">{t("sectors.eyebrow")}</p>
         <h2 className="mt-4 max-w-3xl text-[32px] font-bold leading-[1.1] tracking-tight text-foreground md:text-[44px]">

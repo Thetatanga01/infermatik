@@ -28,6 +28,7 @@ const sectorItems = [
 
 vi.mock("react-i18next", () => ({
   useTranslation: () => ({
+    i18n: { language: "tr" },
     t: (key: string, options?: { returnObjects?: boolean }) => {
       if (key === "sectors.items" && options?.returnObjects) return sectorItems;
       if (key === "sectors.eyebrow") return "Sektörler";

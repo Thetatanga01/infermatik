@@ -1,15 +1,16 @@
 import { useTranslation } from "react-i18next";
+import { getAnchorId } from "@/lib/anchors";
 
 type ProblemItem = { title: string; body: string };
 type StepItem = { n: string; title: string; body: string };
 
 export const Problem = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const problems = t("problem.problems", { returnObjects: true }) as ProblemItem[];
   const steps = t("problem.steps", { returnObjects: true }) as StepItem[];
 
   return (
-    <section id="problem" className="border-b border-border bg-background">
+    <section id={getAnchorId(i18n.language, "problem")} className="border-b border-border bg-background">
       <div className="container-narrow py-20 md:py-28">
         <p className="eyebrow">{t("problem.eyebrow")}</p>
         <h2 className="mt-4 max-w-3xl text-[32px] font-bold leading-[1.1] tracking-tight text-foreground md:text-[44px]">

@@ -1,14 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { StpTooltipText } from "@/components/site/StpTooltipText";
+import { getAnchorId } from "@/lib/anchors";
 
 type CapItem = { n: string; title: string; body: string };
 
 export const Capabilities = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const items = t("capabilities.items", { returnObjects: true }) as CapItem[];
 
   return (
-    <section id="yetenekler" className="border-b border-border bg-surface">
+    <section id={getAnchorId(i18n.language, "capabilities")} className="border-b border-border bg-surface">
       <div className="container-narrow py-20 md:py-28">
         <p className="eyebrow">{t("capabilities.eyebrow")}</p>
         <h2 className="mt-4 max-w-3xl text-[32px] font-bold leading-[1.1] tracking-tight text-foreground md:text-[44px]">

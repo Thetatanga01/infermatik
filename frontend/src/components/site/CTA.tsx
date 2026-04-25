@@ -1,13 +1,14 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { DemoRequestDialog } from "@/components/site/DemoRequestDialog";
+import { getAnchorId } from "@/lib/anchors";
 import { ArrowRight } from "lucide-react";
 
 export const CTA = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
-    <section id="iletisim" className="bg-background">
+    <section id={getAnchorId(i18n.language, "contact")} className="bg-background">
       <div className="container-narrow py-20 md:py-28">
         <div className="relative overflow-hidden rounded-2xl bg-ink p-10 md:p-14">
           <div

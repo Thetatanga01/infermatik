@@ -1,10 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { DemoRequestDialog } from "@/components/site/DemoRequestDialog";
+import { getAnchorId } from "@/lib/anchors";
 import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const tags = t("hero.tags", { returnObjects: true }) as string[];
 
   return (
@@ -38,7 +39,7 @@ export const Hero = () => {
             </Button>
           </DemoRequestDialog>
           <Button asChild size="lg" variant="outline">
-            <a href="#yetenekler">{t("hero.ctaFeatures")}</a>
+            <a href={`#${getAnchorId(i18n.language, "capabilities")}`}>{t("hero.ctaFeatures")}</a>
           </Button>
         </div>
 

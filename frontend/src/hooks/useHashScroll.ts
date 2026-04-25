@@ -1,5 +1,7 @@
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
+import { getAnchorId, getAnchorKeyById } from "@/lib/anchors";
 
 const SCROLL_DELAY_MS = 200;
 
@@ -10,6 +12,7 @@ const SCROLL_DELAY_MS = 200;
  */
 export function useHashScroll() {
   const { pathname, hash } = useLocation();
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     if (pathname !== "/") return;
@@ -17,7 +20,9 @@ export function useHashScroll() {
     if (!id) return;
 
     const scrollToId = () => {
-      const el = document.getElementById(id);
+      const anchorKey = getAnchorKeyById(id);
+      const localizedId = anchorKey ? getAnchorId(i18n.language, anchorKey) : id;
+      const el = document.getElementById(localizedId);
       if (el) {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
       }
@@ -25,5 +30,5 @@ export function useHashScroll() {
 
     const timeoutId = window.setTimeout(scrollToId, SCROLL_DELAY_MS);
     return () => window.clearTimeout(timeoutId);
-  }, [pathname, hash]);
+  }, [pathname, hash, i18n.language]);
 }
