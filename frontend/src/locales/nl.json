@@ -1,0 +1,298 @@
+{
+  "meta": {
+    "title": "Infermatik — Platform voor enterprise content intelligence",
+    "description": "Infermatik leest documenten, audio en video met AI en zet ze om in gestructureerde data. Enterprise content intelligence."
+  },
+  "nav": {
+    "problem": "Probleem",
+    "capabilities": "Mogelijkheden",
+    "sectors": "Sectoren",
+    "value": "Waarde",
+    "login": "Inloggen",
+    "requestDemo": "Demo aanvragen",
+    "mainMenu": "Menu"
+  },
+  "lang": {
+    "tr": "Türkçe",
+    "en": "English",
+    "de": "Deutsch",
+    "nl": "Nederlands"
+  },
+  "terms": {
+    "stp": {
+      "label": "Uitleg van STP (Straight-Through Processing)",
+      "tooltip": "Straight-Through Processing is het percentage processen dat end-to-end zonder menselijke tussenkomst wordt afgerond. Een hoger percentage betekent snellere operatie, minder fouten en lagere handmatige controlekosten."
+    }
+  },
+  "demoForm": {
+    "title": "Demo-aanvraagformulier",
+    "description": "Vertel ons over uw organisatie en use case, zodat we de demo gericht kunnen voorbereiden.",
+    "fullName": "Naam",
+    "company": "Organisatie",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "sector": "Sector",
+    "sectorPlaceholder": "Selecteer een sector",
+    "sectorOptions": ["Verzekeringen", "Douane", "Financieel", "Human Resources", "Juridisch & Audit", "Veldoperaties", "Telecom & Publieke sector", "Enterprise Memory"],
+    "message": "Use case",
+    "messagePlaceholder": "Welke document-, audio- of videoprocessen wilt u in de demo zien?",
+    "submit": "Aanvraag versturen",
+    "submitting": "Versturen...",
+    "successTitle": "Uw demo-aanvraag is klaar",
+    "successBody": "Uw aanvraag is naar ons team verzonden. We nemen binnenkort contact met u op.",
+    "errors": {
+      "required": "Vul de verplichte velden in.",
+      "email": "Voer een geldig e-mailadres in.",
+      "notConfigured": "E-mailverzending is nog niet geconfigureerd. Zodra SMTP-gegevens zijn toegevoegd, wordt het formulier direct naar ons team gestuurd.",
+      "submitFailed": "De aanvraag kon niet worden verzonden. Probeer het later opnieuw of mail naar info@infermatik.com."
+    }
+  },
+  "hero": {
+    "badge": "Enterprise content intelligence platform",
+    "headline1": "Content wordt begrijpelijk,",
+    "headline2": "beslissingen gaan sneller.",
+    "sub": "Uw documenten, audio-opnamen en video's worden met AI gelezen, geinterpreteerd en als data direct in uw besluitvorming gebruikt.",
+    "ctaDemo": "Demo aanvragen",
+    "ctaFeatures": "Bekijk mogelijkheden",
+    "tags": ["Documentbegrip", "Audio- & video-extractie", "Besluitautomatisering"]
+  },
+  "problem": {
+    "eyebrow": "Probleem & oplossing",
+    "title": "Enterprise content is een operationele last geworden.",
+    "intro": "Contracten, facturen, klantgesprekken, veldvideo's — de hoeveelheid content blijft groeien, maar waardevolle data wordt nog steeds handmatig uit die content gehaald. Dat is traag, duur en schaalt niet.",
+    "approachEyebrow": "De Infermatik-aanpak",
+    "approachLine1": "Verzamel. Begrijp.",
+    "approachLine2": "Zet om in actie.",
+    "problems": [
+      { "title": "Handmatige data-invoer", "body": "Duizenden documenten, opnamen en video's worden handmatig gelezen en in systemen ingevoerd." },
+      { "title": "Inconsistente nauwkeurigheid", "body": "Vermoeidheid, aandacht en verschillen tussen medewerkers zorgen voor hogere foutpercentages en een onvoorspelbaar proces." },
+      { "title": "Processen die niet schalen", "body": "Het volume groeit, maar de capaciteit niet. Elk nieuw documenttype betekent extra werk." },
+      { "title": "Donkere content", "body": "Audio en video blijven in archieven liggen; de informatie erin wordt niet gebruikt." },
+      { "title": "Zwakke auditability", "body": "Welke beslissing was gebaseerd op welke content? End-to-end traceerbaarheid ontbreekt." },
+      { "title": "Complexe structuren", "body": "Handschrift, stempels, tabellen en audio met meerdere sprekers — bestaande tools schieten tekort." }
+    ],
+    "steps": [
+      { "n": "01 · VERZAMEL", "title": "Breng content binnen", "body": "Document, audio of video — enkel of in bulk. Via drag-and-drop, API, e-mail of systeemintegratie." },
+      { "n": "02 · BEGRIJP", "title": "Laat AI interpreteren", "body": "Tekst wordt geextraheerd, getranscribeerd en samengevat. Structuur, intentie en belangrijke velden worden automatisch herkend." },
+      { "n": "03 · ACTIE", "title": "Voed uw processen", "body": "Teams controleren en keuren goed; data stroomt schoon naar ERP, CRM of workflowtools." }
+    ]
+  },
+  "capabilities": {
+    "eyebrow": "Mogelijkheden",
+    "title": "Een platform, volledige content intelligence.",
+    "intro": "Infermatik werkt over contenttypes heen met dezelfde logica voor templates, review en rapportage. Een keer inrichten, in elke afdeling gebruiken.",
+    "items": [
+      { "n": "01", "title": "Templatebeheer", "body": "Definieer per contenttype eenmaal een template; Infermatik past dezelfde extractie consistent toe." },
+      { "n": "02", "title": "Automatische extractie", "body": "Gestructureerde data uit tekst, tabellen, handschrift, audio en video in seconden." },
+      { "n": "03", "title": "Batchverwerking", "body": "Honderden items parallel verwerken; mislukte items met een klik opnieuw proberen." },
+      { "n": "04", "title": "Human-in-the-loop", "body": "AI ondersteunt, maar vervangt geen oordeel. Elk resultaat wordt beoordeeld met een volledige audit trail." },
+      { "n": "05", "title": "Systeemintegratie", "body": "Schone data naar SAP, CRM en workflows; realtime webhooks en API's." },
+      { "n": "06", "title": "Rapportage", "body": "Templateprestaties, nauwkeurigheid, STP (Straight-Through Processing) en teamproductiviteit in een dashboard." }
+    ]
+  },
+  "sectors": {
+    "eyebrow": "Sectoren",
+    "title": "Van documenten naar data, van data naar beslissingen.",
+    "selectSector": "Toon sectordetails",
+    "detailUseCases": "Concrete use cases",
+    "detailDecision": "Decision intelligence",
+    "detailMetrics": "Meetbare waarde",
+    "items": [
+      {
+        "id": "insurance",
+        "sector": "Verzekeringen",
+        "title": "Slim schadebeheer en fraudcontrole",
+        "body": "Schadedossiers, expertiserapporten, foto's en video's worden samen geanalyseerd.",
+        "problem": "Handmatige schadebeoordeling is traag, en inconsistenties tussen rapporten, polissen en veldbewijs zijn moeilijk te vinden. Dat veroorzaakt frauderisico en operationele kosten.",
+        "useCases": [
+          "Genereert een voorlopige beoordelingsscore uit foto's, video's en expertiserapporten.",
+          "Detecteert tegenstrijdigheden tussen polis, schadeclaim en contractclausules.",
+          "Markeert dubbele claims, hergebruikte beelden en verdachte dossierpatronen."
+        ],
+        "decision": "Infermatik extraheert niet alleen velden; het levert beslissignalen voor geldigheid, risiconiveau en beoordelingsprioriteit.",
+        "metrics": [
+          "Uren dossiercontrole worden in seconden een gestructureerde voorlopige beoordeling.",
+          "Fraudcontroles worden gestandaardiseerd terwijl STP (Straight-Through Processing) en beslisconsistentie verbeteren."
+        ]
+      },
+      {
+        "id": "customs",
+        "sector": "Douane",
+        "title": "Foutloze extractie en compliance",
+        "body": "Aangiften, facturen, contracten, stempels en tabellen worden kruislings gecontroleerd.",
+        "problem": "In douaneprocessen kan zelfs een kleine handmatige invoerfout leiden tot compliance-risico, vertraging of hoge boetes.",
+        "useCases": [
+          "Extraheert data uit facturen en aangiften met handschrift, stempels en complexe tabellen.",
+          "Vergelijkt factuur-, aangifte- en contractregels in een context.",
+          "Controleert transacties tegen actuele douaneregels en interne standaarden."
+        ],
+        "decision": "De Decision Intelligence-laag vindt afwijkingen, zoals regelverschillen tussen factuur en aangifte, voordat de transactie wordt afgerond.",
+        "metrics": [
+          "Handmatige controlelast daalt terwijl foutloze verwerking en STP (Straight-Through Processing) stijgen.",
+          "Boete-, vertragings- en herstelkosten nemen af."
+        ]
+      },
+      {
+        "id": "finance",
+        "sector": "Financieel",
+        "title": "Krediet-, risico- en contractanalyse",
+        "body": "Aanvraagdossiers, inkomensverklaringen en contracten worden beslisklare data.",
+        "problem": "Krediet- en risicoteams moeten veel documenten, oude overeenkomsten en klantverklaringen snel en auditbaar beoordelen.",
+        "useCases": [
+          "Extraheert risicosignalen uit kredietaanvragen en inkomensverklaringen.",
+          "Analyseert tegenstrijdigheden tussen contracten en amendementen.",
+          "Voert compliance- en klantintentiecontroles uit op gespreksopnamen."
+        ],
+        "decision": "Het dossier wordt niet alleen samengevat; Infermatik levert uitlegbare ondersteuning voor goedkeuren, afwijzen of extra review.",
+        "metrics": [
+          "Dossiervoorbereiding wordt korter en ontbrekende of inconsistente informatie wordt eerder gevonden.",
+          "Risicoanalyse en audit trail ontstaan in dezelfde flow."
+        ]
+      },
+      {
+        "id": "hr",
+        "sector": "Human Resources",
+        "title": "Kandidaatmatching en contractstandaarden",
+        "body": "CV's, functiebeschrijvingen, evaluatienotities en arbeidscontracten worden geinterpreteerd.",
+        "problem": "CV-screening en contractreview leunen vaak op trefwoorden en handmatig oordeel, waardoor sterke kandidaten of riskante clausules gemist kunnen worden.",
+        "useCases": [
+          "Leidt de relatie af tussen CV-ervaring en functie-eisen.",
+          "Controleert arbeidscontracten tegen interne standaarden en wettelijke eisen.",
+          "Maakt shortlistvoorstellen uit interviewnotities en kandidaatdocumenten."
+        ],
+        "decision": "Kandidaten worden gerangschikt op ervaringscontext en rolfit, niet alleen op trefwoordmatches.",
+        "metrics": [
+          "Shortlisting versnelt en evaluatiestandaarden worden consistenter.",
+          "Contractfouten worden ontdekt voordat documenten worden gepubliceerd."
+        ]
+      },
+      {
+        "id": "legal-audit",
+        "sector": "Juridisch & Audit",
+        "title": "Tegenstrijdighedenanalyse en argumentgeneratie",
+        "body": "Contracten, facturen, correspondentie en auditnotities worden verbonden in een kennislaag.",
+        "problem": "Juridisch risico zit vaak verborgen in tegenstrijdigheden tussen bestanden; oude correspondentie, contracten en facturen samen lezen kost veel tijd.",
+        "useCases": [
+          "Brengt alle documenten rond een organisatie of persoon samen in een dossiercontext.",
+          "Vindt logische tegenstrijdigheden tussen clausules, facturen en correspondentie.",
+          "Maakt brondocumentlijsten voor audits en juridische voorbereiding."
+        ],
+        "decision": "Infermatik zet de documentpool om in strategische bevindingen en verdedigbare argumentlijnen.",
+        "metrics": [
+          "Onderzoekstijd daalt en het risico op gemiste kritieke documenten neemt af.",
+          "Elke bevinding blijft gekoppeld aan het brondocument, wat auditability versterkt."
+        ]
+      },
+      {
+        "id": "field-ops",
+        "sector": "Veldoperaties",
+        "title": "Realtime controle uit beeld en audio",
+        "body": "Veldvideo's, foto's en spraakopnamen worden gekoppeld aan operationele standaarden.",
+        "problem": "Visueel en auditief bewijs uit het veld blijft vaak in archieven, waardoor veiligheidsincidenten of operationele fouten laat worden opgemerkt.",
+        "useCases": [
+          "Detecteert afwijkende situaties in camerabeelden en veldfoto's.",
+          "Extraheert intentie, actie en risicosignalen uit spraakopnamen.",
+          "Verbindt operationele checklists met visueel bewijs."
+        ],
+        "decision": "Velddata wordt vergeleken met interne standaarden om alerts en aanbevolen acties te produceren.",
+        "metrics": [
+          "Incidentdetectie versnelt en handmatige monitoring neemt af.",
+          "Operationele fouten en veiligheidsrisico's worden eerder zichtbaar."
+        ]
+      },
+      {
+        "id": "telecom-public",
+        "sector": "Telecom & Publieke sector",
+        "title": "Compliance-, verzoek- en coordinatie-intelligentie",
+        "body": "Gespreksopnamen, dealerpapierwerk en multi-channel verzoeken worden geclassificeerd.",
+        "problem": "Klantgesprekken, dealerprocessen en publieke verzoeken zijn verspreid over kanalen, waardoor compliance en routering moeilijker worden.",
+        "useCases": [
+          "Extraheert intentie, actie en compliance-risico uit gesprekken.",
+          "Vindt ontbrekende of inconsistente informatie in dealerdocumenten en voorraadformulieren.",
+          "Classificeert verzoeken uit kanalen zoals CIMER, sociale media en e-mail."
+        ],
+        "decision": "Infermatik stelt de juiste afdeling, prioriteit en reactie voor op basis van eerdere oplossingspatronen.",
+        "metrics": [
+          "Classificatie en routering van verzoeken worden sneller.",
+          "Compliancecontroles worden traceerbaar op gesprek- en documentniveau."
+        ]
+      },
+      {
+        "id": "knowledge-graph",
+        "sector": "Enterprise Memory",
+        "title": "Ask Your Documents en knowledge graph",
+        "body": "Oude dossiers, polissen, correspondentie en rapporten worden doorzoekbaar.",
+        "problem": "De waardevolste kennis van een organisatie ligt verspreid over oude bestanden, waardoor teams eerdere ervaring moeilijk hergebruiken.",
+        "useCases": [
+          "Bouwt een Knowledge Graph uit claims, polissen, douanecorrespondentie en contracten.",
+          "Beantwoordt specifieke vragen aan documenten in natuurlijke taal.",
+          "Toont vergelijkbare dossiers, eerdere beslissingen en terugkerende risico's."
+        ],
+        "decision": "Eerdere institutionele ervaring wordt in de context van nieuwe beslissingen gebracht, zodat teams antwoorden krijgen in plaats van bestanden te zoeken.",
+        "metrics": [
+          "Zoektijd naar kennis daalt en beslissingen worden gebaseerd op historische data.",
+          "Antwoorden zijn betrouwbaar en traceerbaar via links naar brondocumenten."
+        ]
+      }
+    ]
+  },
+  "value": {
+    "eyebrow": "Waarde",
+    "title": "Voor en na. Het verschil is meetbaar.",
+    "intro": "Infermatik biedt niet alleen snelheid; het is een traceerbare, auditbare en veilig schaalbare manier van werken.",
+    "beforeLabel": "Voorheen",
+    "afterLabel": "Met Infermatik",
+    "before": [
+      "Uren handmatige data-invoer",
+      "Nauwkeurigheid afhankelijk van de persoon",
+      "Audio en video blijven dode informatie in het archief",
+      "Elk nieuw documenttype betekent extra werk",
+      "Verspreide of ontbrekende audit trails"
+    ],
+    "after": [
+      "Gestructureerde data in seconden",
+      "AI-ondersteunde, auditbare nauwkeurigheid",
+      "Betekenisvolle signalen uit elk contenttype",
+      "Templates definieren en onbeperkt schalen",
+      "End-to-end traceerbaarheid by design"
+    ],
+    "pillars": [
+      { "title": "Enterprise security", "body": "Rolgebaseerde toegang, teamisolatie en centrale identiteitscontrole." },
+      { "title": "Flexibele deployment", "body": "Cloud of on-prem; uw data blijft onder uw controle." },
+      { "title": "Volledige audit trail", "body": "Elke actie en elke wijziging — met versiebeheer en rollback waar nodig." }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Volgende stap",
+    "title": "Laten we een demo plannen voor uw organisatie.",
+    "body": "Bekijk hoe Infermatik werkt op uw eigen documenten, audio- en videovoorbeelden. In 30 minuten bespreken we uw use case.",
+    "button": "Demo aanvragen"
+  },
+  "footer": {
+    "tagline": "Enterprise content intelligence platform · © {{year}} Infermatik",
+    "capabilities": "Mogelijkheden",
+    "sectors": "Sectoren",
+    "contact": "Contact"
+  },
+  "loginPage": {
+    "metaTitle": "Inloggen — Infermatik",
+    "metaDescription": "Log in bij Infermatik voor uw organisatie.",
+    "title": "Inloggen",
+    "subtitle": "Gebruik uw organisatieaccount om door te gaan.",
+    "username": "Gebruikersnaam",
+    "password": "Wachtwoord",
+    "submit": "Inloggen",
+    "backHome": "Terug naar home",
+    "errorInvalid": "Ongeldige gebruikersnaam of wachtwoord. Controleer uw gegevens."
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Pagina niet gevonden.",
+    "back": "Terug naar home"
+  },
+  "a11y": {
+    "logo": "Infermatik",
+    "languageMenu": "Kies taal",
+    "openMainMenu": "Hoofdmenu openen"
+  }
+}

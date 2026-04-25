@@ -2,14 +2,15 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import de from "@/locales/de.json";
 import en from "@/locales/en.json";
+import nl from "@/locales/nl.json";
 import tr from "@/locales/tr.json";
 
 const STORAGE_KEY = "infermatik.lang";
 
-function getStoredLang(): "tr" | "en" | "de" {
+function getStoredLang(): "tr" | "en" | "de" | "nl" {
   if (typeof localStorage === "undefined") return "tr";
   const v = localStorage.getItem(STORAGE_KEY);
-  if (v === "en" || v === "de" || v === "tr") return v;
+  if (v === "en" || v === "de" || v === "nl" || v === "tr") return v;
   return "tr";
 }
 
@@ -21,6 +22,7 @@ export const i18nReady = i18n.use(initReactI18next).init({
     tr: { translation: tr },
     en: { translation: en },
     de: { translation: de },
+    nl: { translation: nl },
   },
   lng,
   fallbackLng: "en",

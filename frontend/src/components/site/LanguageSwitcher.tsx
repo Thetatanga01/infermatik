@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const codes = { tr: "TR", en: "EN", de: "DE" } as const;
+const codes = { tr: "TR", en: "EN", de: "DE", nl: "NL" } as const;
 
 export const LanguageSwitcher = () => {
   const { i18n, t } = useTranslation();
@@ -30,7 +30,7 @@ export const LanguageSwitcher = () => {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-[10rem]">
-        {(["tr", "en", "de"] as const).map((lng) => (
+        {(["tr", "en", "de", "nl"] as const).map((lng) => (
           <DropdownMenuItem
             key={lng}
             className="flex cursor-pointer items-center justify-between gap-4"
