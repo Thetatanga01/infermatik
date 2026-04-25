@@ -4,8 +4,19 @@ import { DemoRequestDialog } from "@/components/site/DemoRequestDialog";
 import { getAnchorId } from "@/lib/anchors";
 import { ArrowRight, Download } from "lucide-react";
 
+const brochureByLanguage: Record<string, { href: string; fileName: string }> = {
+  tr: { href: "/brochures/infermatik-tr.pdf", fileName: "Infermatik_tr.pdf" },
+  en: { href: "/brochures/infermatik-en.pdf", fileName: "Infermatik_Brochure_EN.pdf" },
+};
+
+const getBrochure = (language: string | undefined) => {
+  const baseLanguage = language?.split("-")[0] ?? "";
+  return brochureByLanguage[baseLanguage];
+};
+
 export const CTA = () => {
   const { t, i18n } = useTranslation();
+  const brochure = getBrochure(i18n.language);
 
   return (
     <section id={getAnchorId(i18n.language, "contact")} className="bg-background">
@@ -35,17 +46,19 @@ export const CTA = () => {
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </Button>
               </DemoRequestDialog>
-              <Button
-                asChild
-                size="lg"
-                variant="outline"
-                className="border-white/20 bg-transparent text-ink-foreground hover:bg-white/10 hover:text-ink-foreground"
-              >
-                <a href="/brochures/infermatik-tr.pdf" download>
-                  {t("cta.brochureButton")}
-                  <Download className="ml-1 h-4 w-4" />
-                </a>
-              </Button>
+              {brochure ? (
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="border-white/20 bg-transparent text-ink-foreground hover:bg-white/10 hover:text-ink-foreground"
+                >
+                  <a href={brochure.href} download={brochure.fileName}>
+                    {t("cta.brochureButton")}
+                    <Download className="ml-1 h-4 w-4" />
+                  </a>
+                </Button>
+              ) : null}
               <a
                 href="mailto:info@infermatik.com"
                 className="text-sm font-medium text-ink-foreground/80 underline-offset-4 hover:text-ink-foreground hover:underline"
