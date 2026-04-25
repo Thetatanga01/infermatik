@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { DemoRequestDialog } from "@/components/site/DemoRequestDialog";
 import { getAnchorId } from "@/lib/anchors";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 
 export const CTA = () => {
   const { t, i18n } = useTranslation();
@@ -35,6 +35,17 @@ export const CTA = () => {
                   <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 </Button>
               </DemoRequestDialog>
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-white/20 bg-transparent text-ink-foreground hover:bg-white/10 hover:text-ink-foreground"
+              >
+                <a href="/brochures/infermatik-tr.pdf" download>
+                  {t("cta.brochureButton")}
+                  <Download className="ml-1 h-4 w-4" />
+                </a>
+              </Button>
               <a
                 href="mailto:info@infermatik.com"
                 className="text-sm font-medium text-ink-foreground/80 underline-offset-4 hover:text-ink-foreground hover:underline"
