@@ -17,6 +17,12 @@
     "en": "English",
     "de": "Deutsch"
   },
+  "terms": {
+    "stp": {
+      "label": "STP (Straight-Through Processing) Erklärung",
+      "tooltip": "Straight-Through Processing ist die Quote, mit der ein Prozess ohne menschlichen Eingriff vollständig abgeschlossen wird. Eine höhere Quote bedeutet schnellere Abläufe, weniger Fehler und geringere manuelle Prüfkosten."
+    }
+  },
   "hero": {
     "badge": "Unternehmensplattform für Inhaltsverständnis",
     "headline1": "Inhalte werden verständlich,",
@@ -57,16 +63,153 @@
       { "n": "03", "title": "Stapelverarbeitung", "body": "Hunderte Inhalte parallel; fehlgeschlagene Fälle mit einem Klick erneut anstoßen." },
       { "n": "04", "title": "Mensch im Kreislauf", "body": "Die KI unterstützt, ersetzt aber keine Beurteilung. Jedes Ergebnis mit vollständigem Prüfprotokoll." },
       { "n": "05", "title": "Systemintegration", "body": "Saubere Daten in SAP, CRM und Abläufe; Echtzeit über Webhooks und API." },
-      { "n": "06", "title": "Reporting", "body": "Vorlagenperformance, Genauigkeit, STP-Quote und Teameffizienz in einem Panel." }
+      { "n": "06", "title": "Reporting", "body": "Vorlagenperformance, Genauigkeit, STP (Straight-Through Processing)-Quote und Teameffizienz in einem Panel." }
     ]
   },
   "sectors": {
     "eyebrow": "Branchen",
-    "title": "Jede Branche, andere Inhalte — dieselbe Plattform.",
+    "title": "Von Dokumenten zu Daten, von Daten zu Entscheidungen.",
+    "selectSector": "Branchendetails anzeigen",
+    "detailUseCases": "Konkrete Nutzung",
+    "detailDecision": "Decision Intelligence",
+    "detailMetrics": "Messbarer Nutzen",
     "items": [
-      { "sector": "Finanzen", "title": "Kredit & Verträge", "body": "Kundendaten aus Anträgen, Compliance aus Gesprächsaufzeichnungen." },
-      { "sector": "Telekom", "title": "Händler & Callcenter", "body": "Absichten und Aktionen aus Händlerunterlagen, Bestandsformularen und Anrufprotokollen." },
-      { "sector": "Versicherung", "title": "Schadenakten", "body": "Schadenerkennung anhand von Fotos, Video und Expertiseberichten; schnellere, konsistentere Bearbeitung." }
+      {
+        "id": "insurance",
+        "sector": "Versicherung",
+        "title": "Intelligente Schaden- und Fraud-Kontrolle",
+        "body": "Schadenakten, Gutachten, Fotos und Videos werden gemeinsam analysiert.",
+        "problem": "Manuelle Schadenprüfung ist langsam, und Widersprüche zwischen Gutachten, Police und Feldnachweisen sind schwer zu erkennen. Das erhöht Fraud-Risiko und Betriebskosten.",
+        "useCases": [
+          "Erstellt eine Vorbewertung aus Fotos, Videos und Gutachten.",
+          "Erkennt Widersprüche zwischen Police, Schadenmeldung und Vertragsklauseln.",
+          "Markiert doppelte Forderungen, wiederverwendete Bilder und verdächtige Muster."
+        ],
+        "decision": "Infermatik extrahiert nicht nur Felder, sondern liefert Entscheidungssignale zu Gültigkeit, Risikoniveau und Prüfpriorität.",
+        "metrics": [
+          "Stundenlange Aktenprüfung wird in Sekunden zu einer strukturierten Vorbewertung.",
+          "Fraud-Prüfungen werden standardisiert, STP (Straight-Through Processing) und Entscheidungskonsistenz steigen."
+        ]
+      },
+      {
+        "id": "customs",
+        "sector": "Zoll",
+        "title": "Fehlerfreie Extraktion und Compliance",
+        "body": "Anmeldungen, Rechnungen, Verträge, Stempel und Tabellen werden abgeglichen.",
+        "problem": "Im Zollprozess kann schon ein kleiner Eingabefehler zu Compliance-Risiken, Verzögerungen oder hohen Strafen führen.",
+        "useCases": [
+          "Extrahiert Daten aus Rechnungen und Anmeldungen mit Handschrift, Stempeln und komplexen Tabellen.",
+          "Vergleicht Rechnungs-, Anmeldungs- und Vertragspositionen in einem Kontext.",
+          "Prüft Vorgänge gegen aktuelle Zollregeln und interne Standards."
+        ],
+        "decision": "Die Decision-Intelligence-Ebene erkennt Abweichungen, etwa Positionsunterschiede zwischen Rechnung und Anmeldung, bevor der Vorgang abgeschlossen wird.",
+        "metrics": [
+          "Manuelle Kontrolllast sinkt, fehlerfreie Verarbeitung und STP (Straight-Through Processing)-Quote steigen.",
+          "Straf-, Verzögerungs- und Nacharbeitskosten werden reduziert."
+        ]
+      },
+      {
+        "id": "finance",
+        "sector": "Finanzen",
+        "title": "Kredit-, Risiko- und Vertragsanalyse",
+        "body": "Antragsunterlagen, Einkommensnachweise und Verträge werden entscheidungsreif.",
+        "problem": "Kredit- und Risikoteams müssen viele Dokumente, frühere Verträge und Kundenaussagen schnell und prüfbar bewerten.",
+        "useCases": [
+          "Extrahiert Risikosignale aus Kreditanträgen und Einkommensnachweisen.",
+          "Analysiert Widersprüche zwischen Verträgen und Nachträgen.",
+          "Prüft Compliance und Kundenabsicht aus Gesprächsaufzeichnungen."
+        ],
+        "decision": "Die Akte wird nicht nur zusammengefasst; Infermatik liefert erklärbare Unterstützung für Freigabe, Ablehnung oder Zusatzprüfung.",
+        "metrics": [
+          "Vorbereitungszeit sinkt, fehlende oder widersprüchliche Angaben werden früher erkannt.",
+          "Risikoanalyse und Prüfpfad entstehen im selben Ablauf."
+        ]
+      },
+      {
+        "id": "hr",
+        "sector": "Human Resources",
+        "title": "Kandidatenabgleich und Vertragsstandards",
+        "body": "Lebensläufe, Stellenprofile, Bewertungsnotizen und Arbeitsverträge werden interpretiert.",
+        "problem": "CV-Screening und Vertragsprüfung hängen oft von Schlüsselwörtern und manueller Einschätzung ab; gute Kandidaten oder riskante Klauseln können übersehen werden.",
+        "useCases": [
+          "Erkennt die Beziehung zwischen Berufserfahrung und Stellenanforderung.",
+          "Prüft Arbeitsverträge gegen interne Standards und rechtliche Vorgaben.",
+          "Erstellt Shortlist-Vorschläge aus Interviewnotizen und Bewerbungsunterlagen."
+        ],
+        "decision": "Kandidaten werden nach Erfahrungskontext und Rollenpassung bewertet, nicht nur nach Schlüsselwörtern.",
+        "metrics": [
+          "Shortlisting wird schneller und Bewertungsstandards werden konsistenter.",
+          "Vertragsfehler werden vor Veröffentlichung erkannt."
+        ]
+      },
+      {
+        "id": "legal-audit",
+        "sector": "Recht & Audit",
+        "title": "Widerspruchsanalyse und Argumenterstellung",
+        "body": "Verträge, Rechnungen, Korrespondenz und Prüfnotizen werden verbunden.",
+        "problem": "Rechtliche Risiken liegen oft in Widersprüchen über verschiedene Dateien hinweg; gemeinsame Prüfung von Korrespondenz, Verträgen und Rechnungen kostet Zeit.",
+        "useCases": [
+          "Bündelt alle Dokumente zu einer Organisation oder Person in einem Fallkontext.",
+          "Findet logische Widersprüche zwischen Klauseln, Rechnungen und Korrespondenz.",
+          "Erstellt quellenbasierte Dokumentlisten für Audits und Verfahren."
+        ],
+        "decision": "Infermatik verwandelt den Dokumentenpool in strategische Erkenntnisse und belastbare Argumentationslinien.",
+        "metrics": [
+          "Recherchezeit sinkt und das Risiko übersehener Schlüsseldokumente nimmt ab.",
+          "Jede Erkenntnis bleibt mit dem Quelldokument verbunden und stärkt die Prüfbarkeit."
+        ]
+      },
+      {
+        "id": "field-ops",
+        "sector": "Außendienst",
+        "title": "Echtzeitkontrolle aus Bild und Audio",
+        "body": "Außendienstvideos, Fotos und Sprachaufnahmen werden mit Standards abgeglichen.",
+        "problem": "Visuelle und akustische Nachweise aus dem Feld bleiben oft im Archiv; Sicherheitsverstöße oder operative Fehler werden spät erkannt.",
+        "useCases": [
+          "Erkennt abweichende Situationen in Kameraaufnahmen und Feldfotos.",
+          "Extrahiert Absicht, Aktion und Risikosignale aus Sprachaufnahmen.",
+          "Verknüpft operative Checklisten mit visuellen Nachweisen."
+        ],
+        "decision": "Felddaten werden mit internen Standards verglichen, um Warnungen und Handlungsempfehlungen zu erzeugen.",
+        "metrics": [
+          "Ereigniserkennung wird schneller und manuelle Überwachung nimmt ab.",
+          "Operative Fehler und Sicherheitsrisiken werden früher sichtbar."
+        ]
+      },
+      {
+        "id": "telecom-public",
+        "sector": "Telekom & Öffentlicher Sektor",
+        "title": "Compliance-, Anfrage- und Koordinationsintelligenz",
+        "body": "Anrufaufzeichnungen, Händlerunterlagen und Mehrkanal-Anfragen werden klassifiziert.",
+        "problem": "Kundengespräche, Händlerprozesse und öffentliche Anfragen liegen über Kanäle verteilt; Compliance und Weiterleitung werden schwieriger.",
+        "useCases": [
+          "Extrahiert Absicht, Aktion und Compliance-Risiko aus Anrufen.",
+          "Erkennt fehlende oder widersprüchliche Angaben in Händlerunterlagen und Bestandsformularen.",
+          "Klassifiziert Anfragen aus Kanälen wie CIMER, sozialen Medien und E-Mail."
+        ],
+        "decision": "Infermatik empfiehlt Einheit, Priorität und Antwort auf Basis früherer Lösungsmuster.",
+        "metrics": [
+          "Klassifizierung und Weiterleitung von Anfragen werden schneller.",
+          "Compliance-Prüfungen werden auf Gesprächs- und Dokumentebene nachvollziehbar."
+        ]
+      },
+      {
+        "id": "knowledge-graph",
+        "sector": "Unternehmensgedächtnis",
+        "title": "Ask Your Documents und Knowledge Graph",
+        "body": "Alte Akten, Policen, Korrespondenz und Berichte werden abfragbar.",
+        "problem": "Das wertvollste Wissen liegt verstreut in alten Dateien; Teams können frühere Erfahrungen nur schwer wiederverwenden.",
+        "useCases": [
+          "Erstellt einen Knowledge Graph aus Schäden, Policen, Zollkorrespondenz und Verträgen.",
+          "Beantwortet konkrete Fragen an Dokumente in natürlicher Sprache.",
+          "Zeigt ähnliche Fälle, frühere Entscheidungen und wiederkehrende Risiken."
+        ],
+        "decision": "Frühere institutionelle Erfahrung wird in neue Entscheidungen eingebracht, damit Teams Antworten erhalten statt Dateien zu suchen.",
+        "metrics": [
+          "Suchzeit sinkt und Entscheidungen stützen sich auf historische Daten.",
+          "Antworten bleiben über Quelldokumente zuverlässig und nachvollziehbar."
+        ]
+      }
     ]
   },
   "value": {

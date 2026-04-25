@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { StpTooltipText } from "@/components/site/StpTooltipText";
 
 type CapItem = { n: string; title: string; body: string };
 
@@ -20,7 +21,9 @@ export const Capabilities = () => {
             <div key={c.n}>
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">{c.n}</p>
               <h3 className="mt-3 text-lg font-semibold text-foreground">{c.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{c.body}</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                <StpTooltipText text={c.body} />
+              </p>
             </div>
           ))}
         </div>

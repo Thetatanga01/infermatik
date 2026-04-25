@@ -17,6 +17,12 @@
     "en": "English",
     "de": "Deutsch"
   },
+  "terms": {
+    "stp": {
+      "label": "STP (Straight-Through Processing) explanation",
+      "tooltip": "Straight-Through Processing is the rate at which a process is completed end to end without human intervention. A higher rate means faster operations, fewer errors, and lower manual review cost."
+    }
+  },
   "hero": {
     "badge": "Enterprise Content Intelligence Platform",
     "headline1": "Content becomes clear,",
@@ -57,16 +63,153 @@
       { "n": "03", "title": "Batch processing", "body": "Hundreds of items processed in parallel; retry failures with one click." },
       { "n": "04", "title": "Human-in-the-loop", "body": "AI assists; it does not replace judgment. Every result is reviewed with a full audit trail." },
       { "n": "05", "title": "System integration", "body": "Clean data into SAP, CRM, and workflow systems; real-time webhooks and APIs." },
-      { "n": "06", "title": "Reporting", "body": "Template performance, accuracy, STP, and team productivity in one dashboard." }
+      { "n": "06", "title": "Reporting", "body": "Template performance, accuracy, STP (Straight-Through Processing), and team productivity in one dashboard." }
     ]
   },
   "sectors": {
     "eyebrow": "Sectors",
-    "title": "Different content in every sector — one platform.",
+    "title": "From documents to data, from data to decisions.",
+    "selectSector": "Show sector details",
+    "detailUseCases": "Concrete use cases",
+    "detailDecision": "Decision intelligence",
+    "detailMetrics": "Measurable value",
     "items": [
-      { "sector": "Financial services", "title": "Credit & contracts", "body": "Customer data from applications, compliance checks from call recordings." },
-      { "sector": "Telecom", "title": "Dealer & call center", "body": "Intent and actions from dealer paperwork, stock forms, and call logs." },
-      { "sector": "Insurance", "title": "Claims files", "body": "Damage triage from photos, video, and expert reports; faster, more consistent." }
+      {
+        "id": "insurance",
+        "sector": "Insurance",
+        "title": "Smart claims and fraud control",
+        "body": "Claims files, adjuster reports, photos, and videos are analyzed together.",
+        "problem": "Manual claims review is slow, and inconsistencies between reports, policies, and field evidence are hard to catch. That creates fraud risk and operational cost.",
+        "useCases": [
+          "Generate a preliminary assessment score from photos, videos, and adjuster reports.",
+          "Detect contradictions across policies, claim statements, and contract clauses.",
+          "Flag duplicate claims, reused images, and suspicious file patterns."
+        ],
+        "decision": "Infermatik does not only extract fields; it produces decision support signals for claim validity, risk level, and review priority.",
+        "metrics": [
+          "Hours of file review become a structured preliminary assessment in seconds.",
+          "Fraud checks become standardized while STP (Straight-Through Processing) and decision consistency improve."
+        ]
+      },
+      {
+        "id": "customs",
+        "sector": "Customs",
+        "title": "Zero-error extraction and compliance",
+        "body": "Declarations, invoices, contracts, stamps, and tables are cross-checked.",
+        "problem": "In customs workflows, even a small manual entry error can become a compliance issue, delay, or heavy regulatory penalty.",
+        "useCases": [
+          "Extract data from invoices and declarations with handwriting, stamps, and complex tables.",
+          "Compare invoice, declaration, and contract line items in one context.",
+          "Check each transaction against current customs rules and internal standards."
+        ],
+        "decision": "The Decision Intelligence layer catches mismatches such as line-item differences between invoice and declaration before the transaction is completed.",
+        "metrics": [
+          "Manual control load drops while error-free processing and STP (Straight-Through Processing) rates improve.",
+          "Penalty, delay, and rework costs are reduced."
+        ]
+      },
+      {
+        "id": "finance",
+        "sector": "Finance",
+        "title": "Credit, risk, and contract analysis",
+        "body": "Application files, income statements, and contracts become decision-ready data.",
+        "problem": "Credit and risk teams need to evaluate many documents, past agreements, and customer statements quickly while keeping the process auditable.",
+        "useCases": [
+          "Extract risk signals from credit applications and income statements.",
+          "Analyze contradictions between contracts and amendments.",
+          "Run compliance and customer intent checks from call recordings."
+        ],
+        "decision": "The file is not just summarized; Infermatik produces explainable support for approve, reject, or request-more-review decisions.",
+        "metrics": [
+          "File preparation time drops, and missing or inconsistent information is caught earlier.",
+          "Risk analysis and audit trail are created in the same flow."
+        ]
+      },
+      {
+        "id": "hr",
+        "sector": "Human Resources",
+        "title": "Candidate matching and contract standards",
+        "body": "CVs, job descriptions, evaluation notes, and employee contracts are interpreted.",
+        "problem": "CV screening and contract review often depend on keywords and manual judgment, so strong candidates or risky clauses can be missed.",
+        "useCases": [
+          "Infer the relationship between CV experience and job requirements.",
+          "Review employee contracts against internal standards and legal requirements.",
+          "Produce shortlist suggestions from interview notes and candidate documents."
+        ],
+        "decision": "Candidates are ranked by experience context and role fit, not just keyword matches.",
+        "metrics": [
+          "Shortlisting accelerates and evaluation standards become consistent.",
+          "Contract errors are caught before publication."
+        ]
+      },
+      {
+        "id": "legal-audit",
+        "sector": "Legal & Audit",
+        "title": "Contradiction analysis and argument generation",
+        "body": "Contracts, invoices, correspondence, and audit notes are connected into one knowledge layer.",
+        "problem": "Legal risk often hides in contradictions across files; reading past correspondence, contracts, and invoices together takes time.",
+        "useCases": [
+          "Bring all documents related to one organization or person into a single case context.",
+          "Find logical contradictions across clauses, invoices, and correspondence.",
+          "Create source-backed document lists for audits and litigation preparation."
+        ],
+        "decision": "Infermatik turns the document pool into strategic findings and defensible argument paths.",
+        "metrics": [
+          "Research time falls and the risk of missing critical documents decreases.",
+          "Every finding remains linked to its source document, strengthening auditability."
+        ]
+      },
+      {
+        "id": "field-ops",
+        "sector": "Field Operations",
+        "title": "Real-time control from image and audio",
+        "body": "Field video, photos, and voice recordings are matched with operating standards.",
+        "problem": "Visual and audio evidence from the field often stays in archives, so safety breaches or operational errors are noticed late.",
+        "useCases": [
+          "Detect non-standard conditions from camera footage and field photos.",
+          "Extract intent, action, and risk signals from voice recordings.",
+          "Connect operational checklists with visual evidence."
+        ],
+        "decision": "Field data is compared with internal standards to produce alerts and recommended actions.",
+        "metrics": [
+          "Incident detection accelerates and manual monitoring load decreases.",
+          "Operational errors and safety risks become visible earlier."
+        ]
+      },
+      {
+        "id": "telecom-public",
+        "sector": "Telecom & Public Sector",
+        "title": "Compliance, request, and coordination intelligence",
+        "body": "Call recordings, dealer paperwork, and multi-channel requests are classified.",
+        "problem": "Customer calls, dealer processes, and public requests are scattered across channels, making compliance and routing harder.",
+        "useCases": [
+          "Extract intent, action, and compliance risk from call recordings.",
+          "Catch missing or inconsistent information in dealer documents and stock forms.",
+          "Classify requests from channels such as CIMER, social media, and email."
+        ],
+        "decision": "Infermatik suggests the right unit, priority, and response based on past resolution patterns.",
+        "metrics": [
+          "Request classification and routing time decreases.",
+          "Compliance checks become traceable at conversation and document level."
+        ]
+      },
+      {
+        "id": "knowledge-graph",
+        "sector": "Enterprise Memory",
+        "title": "Ask Your Documents and knowledge graph",
+        "body": "Past files, policies, correspondence, and reports become queryable.",
+        "problem": "An organization’s most valuable knowledge is scattered across old files, making it hard for teams to reuse past experience.",
+        "useCases": [
+          "Build a Knowledge Graph from claims, policies, customs correspondence, and contracts.",
+          "Ask documents specific questions in natural language.",
+          "Surface similar files, past decisions, and repeated risks."
+        ],
+        "decision": "Past institutional experience is brought into the context of new decisions, so teams get answers instead of searching for files.",
+        "metrics": [
+          "Knowledge search time drops and decisions become grounded in historical data.",
+          "Answers are reliable and traceable through source-document links."
+        ]
+      }
     ]
   },
   "value": {

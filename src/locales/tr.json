@@ -17,6 +17,12 @@
     "en": "English",
     "de": "Deutsch"
   },
+  "terms": {
+    "stp": {
+      "label": "STP (Straight-Through Processing) açıklaması",
+      "tooltip": "Straight-Through Processing, bir işlemin insan müdahalesi olmadan uçtan uca tamamlanma oranıdır. Oran yükseldikçe operasyon hızlanır, hata riski ve manuel kontrol maliyeti azalır."
+    }
+  },
   "hero": {
     "badge": "Kurumsal İçerik Anlama Platformu",
     "headline1": "İçerik anlaşılır hâle gelir,",
@@ -57,16 +63,153 @@
       { "n": "03", "title": "Toplu İşleme", "body": "Yüzlerce içerik eşzamanlı yüklenir ve işlenir; başarısızları tek tıkla tekrar deneyin." },
       { "n": "04", "title": "İnsan Onayı", "body": "AI yardımcıdır, karar verici değil. Her sonuç ekibinizin onayından geçer, tam denetim kaydıyla." },
       { "n": "05", "title": "Sistem Entegrasyonu", "body": "SAP, CRM ve iş akışı sistemlerine temiz veri akışı; webhook ve API ile anlık bağlantı." },
-      { "n": "06", "title": "Raporlama", "body": "Şablon performansı, doğruluk oranları, STP oranı ve ekip üretkenliği tek panelde." }
+      { "n": "06", "title": "Raporlama", "body": "Şablon performansı, doğruluk oranları, STP (Straight-Through Processing) oranı ve ekip üretkenliği tek panelde." }
     ]
   },
   "sectors": {
     "eyebrow": "Sektörler",
-    "title": "Her sektörde, farklı içerik — aynı platform.",
+    "title": "Belgeden veriye değil, belgeden karara.",
+    "selectSector": "Sektör detayını göster",
+    "detailUseCases": "Somut kullanım",
+    "detailDecision": "Karar zekası",
+    "detailMetrics": "Ölçülebilir değer",
     "items": [
-      { "sector": "Finans", "title": "Kredi & sözleşme", "body": "Başvuru belgelerinden müşteri verisi çıkarımı, görüşme kayıtlarından uyum (compliance) kontrolü." },
-      { "sector": "Telekom", "title": "Bayi & çağrı merkezi", "body": "Bayi evrakları, stok formları ve çağrı kayıtlarından niyet ve aksiyon çıkarımı." },
-      { "sector": "Sigorta", "title": "Hasar dosyaları", "body": "Fotoğraf, video ve eksper raporlarından hasar tespiti; süreci hızlandırır, tutarlılık getirir." }
+      {
+        "id": "insurance",
+        "sector": "Sigorta",
+        "title": "Akıllı hasar ve fraud kontrolü",
+        "body": "Hasar dosyaları, eksper raporları, fotoğraf ve videolar birlikte analiz edilir.",
+        "problem": "Manuel hasar inceleme süreçleri yavaştır; eksper raporu, poliçe ve saha görselleri arasındaki tutarsızlıkları yakalamak zordur. Bu da fraud riski ve operasyon maliyeti doğurur.",
+        "useCases": [
+          "Fotoğraf, video ve eksper raporlarından ön ekspertiz skoru üretir.",
+          "Poliçe, hasar beyanı ve sözleşme maddeleri arasındaki çelişkileri tespit eder.",
+          "Mükerrer talepleri, tekrar kullanılan görselleri ve şüpheli dosya örüntülerini işaretler."
+        ],
+        "decision": "Infermatik yalnızca alan çıkarmaz; hasarın geçerliliği, risk seviyesi ve inceleme önceliği için karar destek sinyali üretir.",
+        "metrics": [
+          "Saatler süren dosya incelemesi saniyeler içinde yapılandırılmış ön değerlendirmeye dönüşür.",
+          "Fraud kontrolleri standartlaşır, STP (Straight-Through Processing) oranı ve tutarlı karar oranı yükselir."
+        ]
+      },
+      {
+        "id": "customs",
+        "sector": "Gümrük",
+        "title": "Sıfır hata veri çıkarımı ve compliance",
+        "body": "Beyanname, fatura, sözleşme, mühür ve tablolar çapraz kontrol edilir.",
+        "problem": "Gümrük süreçlerinde en küçük manuel giriş hatası bile mevzuat uyumsuzluğu, gecikme veya ağır ceza riski yaratabilir.",
+        "useCases": [
+          "El yazısı, mühür ve karmaşık tablolar içeren fatura ve beyannamelerden veri çıkarır.",
+          "Fatura, beyanname ve sözleşme kalemlerini tek çatıda karşılaştırır.",
+          "Güncel gümrük regülasyonları ve kurum standartlarına göre uyum kontrolü yapar."
+        ],
+        "decision": "Decision Intelligence katmanı, fatura ile beyanname arasındaki kalem farkı gibi tutarsızlıkları işlem tamamlanmadan yakalar.",
+        "metrics": [
+          "Manuel kontrol yükü azalır, hatasız işlem ve STP (Straight-Through Processing) oranı yükselir.",
+          "Regülasyon cezası, gecikme ve yeniden işlem maliyeti düşer."
+        ]
+      },
+      {
+        "id": "finance",
+        "sector": "Finans",
+        "title": "Kredi, risk ve sözleşme analizi",
+        "body": "Başvuru belgeleri, gelir beyanları ve sözleşmelerden karar destek verisi çıkarılır.",
+        "problem": "Kredi ve risk ekipleri çok sayıda belgeyi, geçmiş sözleşmeyi ve müşteri beyanını hızlı ama izlenebilir şekilde değerlendirmek zorundadır.",
+        "useCases": [
+          "Kredi başvuru belgeleri ve gelir beyanlarından risk sinyalleri çıkarır.",
+          "Sözleşmeler ve ek protokoller arasındaki çelişkileri analiz eder.",
+          "Görüşme kayıtlarından uyum ve müşteri niyeti kontrolü yapar."
+        ],
+        "decision": "Başvuru dosyasını yalnızca özetlemez; onay, ret veya ek inceleme ihtiyacı için açıklanabilir karar destek verisi üretir.",
+        "metrics": [
+          "Dosya hazırlık süresi kısalır, eksik belge ve tutarsız bilgi daha erken yakalanır.",
+          "Risk analizi ve denetim izi aynı süreçte oluşur."
+        ]
+      },
+      {
+        "id": "hr",
+        "sector": "İnsan Kaynakları",
+        "title": "Aday eşleştirme ve sözleşme standardı",
+        "body": "CV, iş tanımı, değerlendirme notları ve çalışan sözleşmeleri anlamlandırılır.",
+        "problem": "CV tarama ve sözleşme kontrolü çoğu zaman anahtar kelimeye ve manuel yoruma dayanır; iyi aday veya riskli madde gözden kaçabilir.",
+        "useCases": [
+          "CV deneyimleri ile iş tanımı arasındaki anlam ilişkisini çıkarır.",
+          "Çalışan sözleşmelerini kurum standardı ve yasal gerekliliklere göre kontrol eder.",
+          "Mülakat notları ve aday belgelerinden kısa liste önerisi üretir."
+        ],
+        "decision": "Adayları yalnızca kelime eşleşmesine göre değil, deneyim bağlamı ve rol uyumu üzerinden sıralar.",
+        "metrics": [
+          "Kısa liste hazırlığı hızlanır, aday değerlendirme standardı tutarlı hale gelir.",
+          "Sözleşme hataları yayınlanmadan önce yakalanır."
+        ]
+      },
+      {
+        "id": "legal-audit",
+        "sector": "Hukuk & Denetim",
+        "title": "Çelişki analizi ve argüman üretimi",
+        "body": "Sözleşme, fatura, yazışma ve denetim notları tek bilgi ağına bağlanır.",
+        "problem": "Hukuki risk çoğu zaman farklı dosyalarda saklı çelişkilerden doğar; geçmiş yazışma, sözleşme ve faturaları birlikte okumak zaman alır.",
+        "useCases": [
+          "Aynı kurum veya kişiyle ilgili belgeleri tek dosya bağlamında toplar.",
+          "Sözleşme maddeleri, faturalar ve yazışmalar arasındaki mantıksal çelişkileri bulur.",
+          "Denetim ve dava hazırlığı için dayanak belge listesini oluşturur."
+        ],
+        "decision": "Belge havuzundan stratejik çıkarımlar ve savunulabilir argüman hatları üretir.",
+        "metrics": [
+          "Araştırma süresi azalır, kritik belge kaçırma riski düşer.",
+          "Her çıkarım kaynak belgeye bağlı olduğu için denetim izi güçlenir."
+        ]
+      },
+      {
+        "id": "field-ops",
+        "sector": "Saha Operasyonları",
+        "title": "Görüntü ve sesle gerçek zamanlı kontrol",
+        "body": "Saha video, fotoğraf ve ses kayıtları operasyon standartlarıyla eşleştirilir.",
+        "problem": "Sahadan gelen görsel ve sesli içerik çoğu zaman arşivde kalır; güvenlik ihlali veya operasyon hatası geç fark edilir.",
+        "useCases": [
+          "Kamera görüntüsü ve saha fotoğraflarından standart dışı durumları tespit eder.",
+          "Ses kayıtlarından niyet, aksiyon ve risk sinyali çıkarır.",
+          "Operasyon kontrol listelerini görsel kanıtlarla ilişkilendirir."
+        ],
+        "decision": "Saha verisini kurum standardıyla karşılaştırarak anlık uyarı ve aksiyon önerisi üretir.",
+        "metrics": [
+          "Olay tespiti hızlanır, manuel izleme yükü azalır.",
+          "Operasyonel hata ve güvenlik riski daha erken görünür hale gelir."
+        ]
+      },
+      {
+        "id": "telecom-public",
+        "sector": "Telekom & Kamu",
+        "title": "Uyum, talep ve koordinasyon zekası",
+        "body": "Çağrı kayıtları, bayi evrakları ve çok kanallı talepler sınıflandırılır.",
+        "problem": "Müşteri görüşmeleri, bayi süreçleri ve kamu talepleri farklı kanallarda dağılır; regülasyon uyumu ve doğru yönlendirme zorlaşır.",
+        "useCases": [
+          "Çağrı kayıtlarından niyet, aksiyon ve uyum riski çıkarır.",
+          "Bayi evrakları ve stok formlarındaki eksik veya tutarsız bilgiyi yakalar.",
+          "CİMER, sosyal medya ve e-posta gibi kanallardan gelen talepleri sınıflandırır."
+        ],
+        "decision": "Geçmiş çözüm örüntülerine göre doğru birim, öncelik ve yanıt önerisi üretir.",
+        "metrics": [
+          "Talep sınıflandırma ve yönlendirme süresi kısalır.",
+          "Uyum kontrolü görüşme ve evrak seviyesinde izlenebilir hale gelir."
+        ]
+      },
+      {
+        "id": "knowledge-graph",
+        "sector": "Kurumsal Hafıza",
+        "title": "Ask Your Documents ve bilgi ağı",
+        "body": "Geçmiş dosyalar, poliçeler, yazışmalar ve raporlar sorgulanabilir hale gelir.",
+        "problem": "Kurumların en değerli bilgisi eski dosyalarda dağınık halde durur; ekipler geçmiş deneyimi tekrar kullanmakta zorlanır.",
+        "useCases": [
+          "Geçmiş hasar, poliçe, gümrük yazışması ve sözleşmelerden Knowledge Graph oluşturur.",
+          "Belgelere doğal dille soru sorarak spesifik yanıtlar üretir.",
+          "Benzer dosyaları, geçmiş kararları ve tekrar eden riskleri önerir."
+        ],
+        "decision": "Geçmiş kurumsal deneyimi yeni kararların bağlamına taşır; ekipler belge aramak yerine doğrudan cevap alır.",
+        "metrics": [
+          "Bilgi arama süresi azalır, kararlar geçmiş veriye dayalı hale gelir.",
+          "Kaynak belge bağlantılarıyla güvenilir ve izlenebilir yanıtlar üretilir."
+        ]
+      }
     ]
   },
   "value": {
